@@ -1,0 +1,2428 @@
+2025-04-28T13:12:40.882Z	Initializing build environment...
+2025-04-28T13:12:49.212Z	Success: Finished initializing build environment
+2025-04-28T13:12:49.369Z	Cloning repository...
+2025-04-28T13:12:50.446Z	Detected the following tools from environment: npm@10.8.3, nodejs@22.9.0
+2025-04-28T13:12:50.449Z	Installing project dependencies: npm clean-install --progress=false
+2025-04-28T13:12:58.503Z	npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+2025-04-28T13:12:58.538Z	npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+2025-04-28T13:13:07.749Z	
+2025-04-28T13:13:07.751Z	added 502 packages, and audited 503 packages in 17s
+2025-04-28T13:13:07.755Z	
+2025-04-28T13:13:07.755Z	65 packages are looking for funding
+2025-04-28T13:13:07.755Z	  run `npm fund` for details
+2025-04-28T13:13:07.807Z	
+2025-04-28T13:13:07.808Z	7 moderate severity vulnerabilities
+2025-04-28T13:13:07.809Z	
+2025-04-28T13:13:07.809Z	To address issues that do not require attention, run:
+2025-04-28T13:13:07.810Z	  npm audit fix
+2025-04-28T13:13:07.812Z	
+2025-04-28T13:13:07.813Z	To address all issues (including breaking changes), run:
+2025-04-28T13:13:07.813Z	  npm audit fix --force
+2025-04-28T13:13:07.813Z	
+2025-04-28T13:13:07.814Z	Run `npm audit` for details.
+2025-04-28T13:13:07.866Z	Executing user build command: npm run build
+2025-04-28T13:13:08.305Z	
+2025-04-28T13:13:08.305Z	> rest-express@1.0.0 build
+2025-04-28T13:13:08.305Z	> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+2025-04-28T13:13:08.305Z	
+2025-04-28T13:13:08.702Z	vite v5.4.14 building for production...
+2025-04-28T13:13:08.780Z	transforming...
+2025-04-28T13:13:21.226Z	✓ 2963 modules transformed.
+2025-04-28T13:13:22.338Z	rendering chunks...
+2025-04-28T13:13:22.366Z	computing gzip size...
+2025-04-28T13:13:22.409Z	../dist/public/index.html                     0.63 kB │ gzip:   0.38 kB
+2025-04-28T13:13:22.409Z	../dist/public/assets/index-BBTRBnAp.css     71.55 kB │ gzip:  12.18 kB
+2025-04-28T13:13:22.410Z	../dist/public/assets/index-C0h84N1g.js   1,036.49 kB │ gzip: 294.07 kB
+2025-04-28T13:13:22.410Z	✓ built in 13.67s
+2025-04-28T13:13:22.410Z	
+2025-04-28T13:13:22.410Z	(!) Some chunks are larger than 500 kB after minification. Consider:
+2025-04-28T13:13:22.411Z	- Using dynamic import() to code-split the application
+2025-04-28T13:13:22.411Z	- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+2025-04-28T13:13:22.411Z	- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+2025-04-28T13:13:22.504Z	
+2025-04-28T13:13:22.504Z	  dist/index.js  31.3kb
+2025-04-28T13:13:22.505Z	
+2025-04-28T13:13:22.505Z	⚡ Done in 9ms
+2025-04-28T13:13:22.518Z	Success: Build command completed
+2025-04-28T13:13:22.519Z	Executing user deploy command: npx wrangler deploy
+2025-04-28T13:13:24.191Z	npm warn exec The following package was not found and will be installed: wrangler@4.13.2
+2025-04-28T13:13:36.543Z	
+2025-04-28T13:13:36.543Z	 ⛅️ wrangler 4.13.2
+2025-04-28T13:13:36.543Z	-------------------
+2025-04-28T13:13:36.543Z	
+2025-04-28T13:13:36.553Z	Running custom build: npm run build
+2025-04-28T13:13:36.786Z	
+2025-04-28T13:13:36.786Z	> rest-express@1.0.0 build
+2025-04-28T13:13:36.786Z	> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+2025-04-28T13:13:36.786Z	
+2025-04-28T13:13:37.192Z	vite v5.4.14 building for production...
+2025-04-28T13:13:37.293Z	transforming...
+2025-04-28T13:12:40.882Z	Initializing build environment...
+2025-04-28T13:12:49.212Z	Success: Finished initializing build environment
+2025-04-28T13:12:49.369Z	Cloning repository...
+2025-04-28T13:12:50.446Z	Detected the following tools from environment: npm@10.8.3, nodejs@22.9.0
+2025-04-28T13:12:50.449Z	Installing project dependencies: npm clean-install --progress=false
+2025-04-28T13:12:58.503Z	npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+2025-04-28T13:12:58.538Z	npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+2025-04-28T13:13:07.749Z	
+2025-04-28T13:13:07.751Z	added 502 packages, and audited 503 packages in 17s
+2025-04-28T13:13:07.755Z	
+2025-04-28T13:13:07.755Z	65 packages are looking for funding
+2025-04-28T13:13:07.755Z	  run `npm fund` for details
+2025-04-28T13:13:07.807Z	
+2025-04-28T13:13:07.808Z	7 moderate severity vulnerabilities
+2025-04-28T13:13:07.809Z	
+2025-04-28T13:13:07.809Z	To address issues that do not require attention, run:
+2025-04-28T13:13:07.810Z	  npm audit fix
+2025-04-28T13:13:07.812Z	
+2025-04-28T13:13:07.813Z	To address all issues (including breaking changes), run:
+2025-04-28T13:13:07.813Z	  npm audit fix --force
+2025-04-28T13:13:07.813Z	
+2025-04-28T13:13:07.814Z	Run `npm audit` for details.
+2025-04-28T13:13:07.866Z	Executing user build command: npm run build
+2025-04-28T13:13:08.305Z	
+2025-04-28T13:13:08.305Z	> rest-express@1.0.0 build
+2025-04-28T13:13:08.305Z	> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+2025-04-28T13:13:08.305Z	
+2025-04-28T13:13:08.702Z	vite v5.4.14 building for production...
+2025-04-28T13:13:08.780Z	transforming...
+2025-04-28T13:13:21.226Z	✓ 2963 modules transformed.
+2025-04-28T13:13:22.338Z	rendering chunks...
+2025-04-28T13:13:22.366Z	computing gzip size...
+2025-04-28T13:13:22.409Z	../dist/public/index.html                     0.63 kB │ gzip:   0.38 kB
+2025-04-28T13:13:22.409Z	../dist/public/assets/index-BBTRBnAp.css     71.55 kB │ gzip:  12.18 kB
+2025-04-28T13:13:22.410Z	../dist/public/assets/index-C0h84N1g.js   1,036.49 kB │ gzip: 294.07 kB
+2025-04-28T13:13:22.410Z	✓ built in 13.67s
+2025-04-28T13:13:22.410Z	
+2025-04-28T13:13:22.410Z	(!) Some chunks are larger than 500 kB after minification. Consider:
+2025-04-28T13:13:22.411Z	- Using dynamic import() to code-split the application
+2025-04-28T13:13:22.411Z	- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+2025-04-28T13:13:22.411Z	- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+2025-04-28T13:13:22.504Z	
+2025-04-28T13:13:22.504Z	  dist/index.js  31.3kb
+2025-04-28T13:13:22.505Z	
+2025-04-28T13:13:22.505Z	⚡ Done in 9ms
+2025-04-28T13:13:22.518Z	Success: Build command completed
+2025-04-28T13:13:22.519Z	Executing user deploy command: npx wrangler deploy
+2025-04-28T13:13:24.191Z	npm warn exec The following package was not found and will be installed: wrangler@4.13.2
+2025-04-28T13:13:36.543Z	
+2025-04-28T13:13:36.543Z	 ⛅️ wrangler 4.13.2
+2025-04-28T13:13:36.543Z	-------------------
+2025-04-28T13:13:36.543Z	
+2025-04-28T13:13:36.553Z	Running custom build: npm run build
+2025-04-28T13:13:36.786Z	
+2025-04-28T13:13:36.786Z	> rest-express@1.0.0 build
+2025-04-28T13:13:36.786Z	> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+2025-04-28T13:13:36.786Z	
+2025-04-28T13:13:37.192Z	vite v5.4.14 building for production...
+2025-04-28T13:13:37.293Z	transforming...
+2025-04-28T13:13:50.241Z	✓ 2963 modules transformed.
+2025-04-28T13:13:51.387Z	rendering chunks...
+2025-04-28T13:13:51.419Z	computing gzip size...
+2025-04-28T13:13:51.455Z	../dist/public/index.html                     0.63 kB │ gzip:   0.38 kB
+2025-04-28T13:13:51.455Z	../dist/public/assets/index-BBTRBnAp.css     71.55 kB │ gzip:  12.18 kB
+2025-04-28T13:13:51.455Z	../dist/public/assets/index-C0h84N1g.js   1,036.49 kB │ gzip: 294.07 kB
+2025-04-28T13:13:51.455Z	
+2025-04-28T13:13:51.455Z	(!) Some chunks are larger than 500 kB after minification. Consider:
+2025-04-28T13:13:51.455Z	- Using dynamic import() to code-split the application
+2025-04-28T13:13:51.456Z	- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+2025-04-28T13:13:51.459Z	- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+2025-04-28T13:13:51.460Z	✓ built in 14.21s
+2025-04-28T13:13:51.563Z	
+2025-04-28T13:13:51.563Z	  dist/index.js  31.3kb
+2025-04-28T13:13:51.563Z	
+2025-04-28T13:13:51.564Z	⚡ Done in 14ms
+2025-04-28T13:13:53.819Z	  
+2025-04-28T13:13:53.819Z	  
+2025-04-28T13:13:53.819Z	  ✘ [ERROR] Could not resolve "assert"
+2025-04-28T13:13:53.819Z	  
+2025-04-28T13:13:53.819Z	      node_modules/@babel/helper-module-imports/lib/import-injector.js:7:22:
+2025-04-28T13:13:53.819Z	        7 │ var _assert = require("assert");
+2025-04-28T13:13:53.819Z	          ╵                       ~~~~~~~~
+2025-04-28T13:13:53.819Z	  
+2025-04-28T13:13:53.819Z	    The package "assert" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.819Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.819Z	    
+2025-04-28T13:13:53.819Z	  
+2025-04-28T13:13:53.819Z	  
+2025-04-28T13:13:53.819Z	  ✘ [ERROR] Could not resolve "assert"
+2025-04-28T13:13:53.819Z	  
+2025-04-28T13:13:53.820Z	      node_modules/@babel/helper-module-transforms/lib/index.js:46:22:
+2025-04-28T13:13:53.820Z	        46 │ var _assert = require("assert");
+2025-04-28T13:13:53.820Z	           ╵                       ~~~~~~~~
+2025-04-28T13:13:53.820Z	  
+2025-04-28T13:13:53.820Z	    The package "assert" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.820Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.820Z	    
+2025-04-28T13:13:53.820Z	  
+2025-04-28T13:13:53.820Z	  
+2025-04-28T13:13:53.826Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.827Z	  
+2025-04-28T13:13:53.828Z	      node_modules/@babel/helper-module-transforms/lib/normalize-and-load-metadata.js:10:20:
+2025-04-28T13:13:53.829Z	        10 │ var _path = require("path");
+2025-04-28T13:13:53.829Z	           ╵                     ~~~~~~
+2025-04-28T13:13:53.829Z	  
+2025-04-28T13:13:53.829Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.829Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.830Z	    
+2025-04-28T13:13:53.830Z	  
+2025-04-28T13:13:53.830Z	  
+2025-04-28T13:13:53.830Z	  ✘ [ERROR] Could not resolve "fs/promises"
+2025-04-28T13:13:53.830Z	  
+2025-04-28T13:13:53.830Z	      node_modules/@replit/vite-plugin-cartographer/dist/index.mjs:2:15:
+2025-04-28T13:13:53.830Z	        2 │ import fs from "fs/promises";
+2025-04-28T13:13:53.830Z	          ╵                ~~~~~~~~~~~~~
+2025-04-28T13:13:53.830Z	  
+2025-04-28T13:13:53.831Z	    The package "fs/promises" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.831Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.831Z	    
+2025-04-28T13:13:53.831Z	  
+2025-04-28T13:13:53.831Z	  
+2025-04-28T13:13:53.831Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.831Z	  
+2025-04-28T13:13:53.831Z	      node_modules/@replit/vite-plugin-cartographer/dist/index.mjs:3:17:
+2025-04-28T13:13:53.832Z	        3 │ import path from "path";
+2025-04-28T13:13:53.832Z	          ╵                  ~~~~~~
+2025-04-28T13:13:53.832Z	  
+2025-04-28T13:13:53.832Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.832Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.832Z	    
+2025-04-28T13:13:53.832Z	  
+2025-04-28T13:13:53.832Z	  
+2025-04-28T13:13:53.832Z	  ✘ [ERROR] Could not resolve "url"
+2025-04-28T13:13:53.832Z	  
+2025-04-28T13:13:53.832Z	      node_modules/@replit/vite-plugin-cartographer/dist/index.mjs:4:30:
+2025-04-28T13:13:53.832Z	        4 │ import { fileURLToPath } from "url";
+2025-04-28T13:13:53.832Z	          ╵                               ~~~~~
+2025-04-28T13:13:53.833Z	  
+2025-04-28T13:13:53.833Z	    The package "url" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.833Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.833Z	    
+2025-04-28T13:13:53.833Z	  
+2025-04-28T13:13:53.833Z	  
+2025-04-28T13:13:53.833Z	  ✘ [ERROR] Could not resolve "zlib"
+2025-04-28T13:13:53.833Z	  
+2025-04-28T13:13:53.833Z	      node_modules/body-parser/lib/read.js:20:19:
+2025-04-28T13:13:53.833Z	        20 │ var zlib = require('zlib')
+2025-04-28T13:13:53.833Z	           ╵                    ~~~~~~
+2025-04-28T13:13:53.834Z	  
+2025-04-28T13:13:53.834Z	    The package "zlib" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.834Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.834Z	    
+2025-04-28T13:13:53.834Z	  
+2025-04-28T13:13:53.834Z	  
+2025-04-28T13:13:53.834Z	  ✘ [ERROR] Could not resolve "querystring"
+2025-04-28T13:13:53.834Z	  
+2025-04-28T13:13:53.834Z	      node_modules/body-parser/lib/types/urlencoded.js:251:20:
+2025-04-28T13:13:53.834Z	        251 │       mod = require('querystring')
+2025-04-28T13:13:53.834Z	            ╵                     ~~~~~~~~~~~~~
+2025-04-28T13:13:53.834Z	  
+2025-04-28T13:13:53.835Z	    The package "querystring" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.835Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.835Z	    
+2025-04-28T13:13:53.835Z	  
+2025-04-28T13:13:53.835Z	  
+2025-04-28T13:13:53.835Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.835Z	  
+2025-04-28T13:13:53.835Z	      node_modules/content-disposition/index.js:22:23:
+2025-04-28T13:13:53.835Z	        22 │ var basename = require('path').basename
+2025-04-28T13:13:53.835Z	           ╵                        ~~~~~~
+2025-04-28T13:13:53.835Z	  
+2025-04-28T13:13:53.841Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.841Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.842Z	    
+2025-04-28T13:13:53.842Z	  
+2025-04-28T13:13:53.843Z	  
+2025-04-28T13:13:53.843Z	  ✘ [ERROR] Could not resolve "crypto"
+2025-04-28T13:13:53.844Z	  
+2025-04-28T13:13:53.844Z	      node_modules/cookie-signature/index.js:5:21:
+2025-04-28T13:13:53.844Z	        5 │ var crypto = require('crypto');
+2025-04-28T13:13:53.847Z	          ╵                      ~~~~~~~~
+2025-04-28T13:13:53.847Z	  
+2025-04-28T13:13:53.848Z	    The package "crypto" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.848Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.848Z	    
+2025-04-28T13:13:53.848Z	  
+2025-04-28T13:13:53.848Z	  
+2025-04-28T13:13:53.848Z	  ✘ [ERROR] Could not resolve "events"
+2025-04-28T13:13:53.848Z	  
+2025-04-28T13:13:53.848Z	      node_modules/destroy/index.js:15:27:
+2025-04-28T13:13:53.849Z	        15 │ var EventEmitter = require('events').EventEmitter
+2025-04-28T13:13:53.851Z	           ╵                            ~~~~~~~~
+2025-04-28T13:13:53.851Z	  
+2025-04-28T13:13:53.851Z	    The package "events" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.851Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.852Z	    
+2025-04-28T13:13:53.852Z	  
+2025-04-28T13:13:53.852Z	  
+2025-04-28T13:13:53.852Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:53.852Z	  
+2025-04-28T13:13:53.852Z	      node_modules/destroy/index.js:16:25:
+2025-04-28T13:13:53.852Z	        16 │ var ReadStream = require('fs').ReadStream
+2025-04-28T13:13:53.853Z	           ╵                          ~~~~
+2025-04-28T13:13:53.853Z	  
+2025-04-28T13:13:53.853Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.853Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.854Z	    
+2025-04-28T13:13:53.854Z	  
+2025-04-28T13:13:53.854Z	  
+2025-04-28T13:13:53.854Z	  ✘ [ERROR] Could not resolve "stream"
+2025-04-28T13:13:53.854Z	  
+2025-04-28T13:13:53.854Z	      node_modules/destroy/index.js:17:21:
+2025-04-28T13:13:53.854Z	        17 │ var Stream = require('stream')
+2025-04-28T13:13:53.855Z	           ╵                      ~~~~~~~~
+2025-04-28T13:13:53.855Z	  
+2025-04-28T13:13:53.855Z	    The package "stream" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.855Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.855Z	    
+2025-04-28T13:13:53.855Z	  
+2025-04-28T13:13:53.855Z	  
+2025-04-28T13:13:53.855Z	  ✘ [ERROR] Could not resolve "zlib"
+2025-04-28T13:13:53.855Z	  
+2025-04-28T13:13:53.856Z	      node_modules/destroy/index.js:18:19:
+2025-04-28T13:13:53.856Z	        18 │ var Zlib = require('zlib')
+2025-04-28T13:13:53.856Z	           ╵                    ~~~~~~
+2025-04-28T13:13:53.856Z	  
+2025-04-28T13:13:53.856Z	    The package "zlib" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.856Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.856Z	    
+2025-04-28T13:13:53.856Z	  
+2025-04-28T13:13:53.856Z	  
+2025-04-28T13:13:53.856Z	  ✘ [ERROR] Could not resolve "child_process"
+2025-04-28T13:13:53.856Z	  
+2025-04-28T13:13:53.856Z	      node_modules/detect-libc/lib/detect-libc.js:6:29:
+2025-04-28T13:13:53.856Z	        6 │ const childProcess = require('child_process');
+2025-04-28T13:13:53.856Z	          ╵                              ~~~~~~~~~~~~~~~
+2025-04-28T13:13:53.856Z	  
+2025-04-28T13:13:53.856Z	    The package "child_process" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.856Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.856Z	    
+2025-04-28T13:13:53.857Z	  
+2025-04-28T13:13:53.857Z	  
+2025-04-28T13:13:53.857Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:53.857Z	  
+2025-04-28T13:13:53.857Z	      node_modules/detect-libc/lib/filesystem.js:6:19:
+2025-04-28T13:13:53.857Z	        6 │ const fs = require('fs');
+2025-04-28T13:13:53.857Z	          ╵                    ~~~~
+2025-04-28T13:13:53.857Z	  
+2025-04-28T13:13:53.857Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.858Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.858Z	    
+2025-04-28T13:13:53.858Z	  
+2025-04-28T13:13:53.858Z	  
+2025-04-28T13:13:53.858Z	  ✘ [ERROR] Could not resolve "crypto"
+2025-04-28T13:13:53.858Z	  
+2025-04-28T13:13:53.858Z	      node_modules/etag/index.js:21:21:
+2025-04-28T13:13:53.858Z	        21 │ var crypto = require('crypto')
+2025-04-28T13:13:53.858Z	           ╵                      ~~~~~~~~
+2025-04-28T13:13:53.858Z	  
+2025-04-28T13:13:53.858Z	    The package "crypto" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.858Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.858Z	    
+2025-04-28T13:13:53.858Z	  
+2025-04-28T13:13:53.858Z	  
+2025-04-28T13:13:53.858Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:53.858Z	  
+2025-04-28T13:13:53.858Z	      node_modules/etag/index.js:22:20:
+2025-04-28T13:13:53.858Z	        22 │ var Stats = require('fs').Stats
+2025-04-28T13:13:53.858Z	           ╵                     ~~~~
+2025-04-28T13:13:53.858Z	  
+2025-04-28T13:13:53.858Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.859Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.859Z	    
+2025-04-28T13:13:53.859Z	  
+2025-04-28T13:13:53.859Z	  
+2025-04-28T13:13:53.859Z	  ✘ [ERROR] Could not resolve "crypto"
+2025-04-28T13:13:53.859Z	  
+2025-04-28T13:13:53.859Z	      node_modules/express-session/index.js:18:21:
+2025-04-28T13:13:53.859Z	        18 │ var crypto = require('crypto')
+2025-04-28T13:13:53.859Z	           ╵                      ~~~~~~~~
+2025-04-28T13:13:53.859Z	  
+2025-04-28T13:13:53.859Z	    The package "crypto" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.863Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.864Z	    
+2025-04-28T13:13:53.864Z	  
+2025-04-28T13:13:53.864Z	  
+2025-04-28T13:13:53.864Z	  ✘ [ERROR] Could not resolve "crypto"
+2025-04-28T13:13:53.864Z	  
+2025-04-28T13:13:53.865Z	      node_modules/express-session/node_modules/cookie-signature/index.js:5:21:
+2025-04-28T13:13:53.865Z	        5 │ var crypto = require('crypto');
+2025-04-28T13:13:53.865Z	          ╵                      ~~~~~~~~
+2025-04-28T13:13:53.865Z	  
+2025-04-28T13:13:53.865Z	    The package "crypto" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.865Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.865Z	    
+2025-04-28T13:13:53.865Z	  
+2025-04-28T13:13:53.866Z	  
+2025-04-28T13:13:53.866Z	  ✘ [ERROR] Could not resolve "util"
+2025-04-28T13:13:53.866Z	  
+2025-04-28T13:13:53.866Z	      node_modules/express-session/session/memory.js:17:19:
+2025-04-28T13:13:53.866Z	        17 │ var util = require('util')
+2025-04-28T13:13:53.866Z	           ╵                    ~~~~~~
+2025-04-28T13:13:53.866Z	  
+2025-04-28T13:13:53.866Z	    The package "util" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.867Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.867Z	    
+2025-04-28T13:13:53.867Z	  
+2025-04-28T13:13:53.867Z	  
+2025-04-28T13:13:53.867Z	  ✘ [ERROR] Could not resolve "events"
+2025-04-28T13:13:53.867Z	  
+2025-04-28T13:13:53.868Z	      node_modules/express-session/session/store.js:16:27:
+2025-04-28T13:13:53.868Z	        16 │ var EventEmitter = require('events').EventEmitter
+2025-04-28T13:13:53.868Z	           ╵                            ~~~~~~~~
+2025-04-28T13:13:53.868Z	  
+2025-04-28T13:13:53.868Z	    The package "events" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.869Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.870Z	    
+2025-04-28T13:13:53.870Z	  
+2025-04-28T13:13:53.870Z	  
+2025-04-28T13:13:53.871Z	  ✘ [ERROR] Could not resolve "util"
+2025-04-28T13:13:53.871Z	  
+2025-04-28T13:13:53.871Z	      node_modules/express-session/session/store.js:18:19:
+2025-04-28T13:13:53.871Z	        18 │ var util = require('util')
+2025-04-28T13:13:53.871Z	           ╵                    ~~~~~~
+2025-04-28T13:13:53.871Z	  
+2025-04-28T13:13:53.872Z	    The package "util" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.872Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.872Z	    
+2025-04-28T13:13:53.872Z	  
+2025-04-28T13:13:53.872Z	  
+2025-04-28T13:13:53.872Z	  ✘ [ERROR] Could not resolve "http"
+2025-04-28T13:13:53.872Z	  
+2025-04-28T13:13:53.872Z	      node_modules/express/lib/application.js:23:19:
+2025-04-28T13:13:53.873Z	        23 │ var http = require('http');
+2025-04-28T13:13:53.873Z	           ╵                    ~~~~~~
+2025-04-28T13:13:53.873Z	  
+2025-04-28T13:13:53.873Z	    The package "http" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.873Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.873Z	    
+2025-04-28T13:13:53.873Z	  
+2025-04-28T13:13:53.874Z	  
+2025-04-28T13:13:53.874Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.874Z	  
+2025-04-28T13:13:53.874Z	      node_modules/express/lib/application.js:30:22:
+2025-04-28T13:13:53.874Z	        30 │ var resolve = require('path').resolve;
+2025-04-28T13:13:53.874Z	           ╵                       ~~~~~~
+2025-04-28T13:13:53.874Z	  
+2025-04-28T13:13:53.874Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.875Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.875Z	    
+2025-04-28T13:13:53.875Z	  
+2025-04-28T13:13:53.875Z	  
+2025-04-28T13:13:53.875Z	  ✘ [ERROR] Could not resolve "events"
+2025-04-28T13:13:53.875Z	  
+2025-04-28T13:13:53.876Z	      node_modules/express/lib/express.js:16:27:
+2025-04-28T13:13:53.876Z	        16 │ var EventEmitter = require('events').EventEmitter;
+2025-04-28T13:13:53.876Z	           ╵                            ~~~~~~~~
+2025-04-28T13:13:53.876Z	  
+2025-04-28T13:13:53.876Z	    The package "events" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.877Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.877Z	    
+2025-04-28T13:13:53.877Z	  
+2025-04-28T13:13:53.877Z	  
+2025-04-28T13:13:53.877Z	  ✘ [ERROR] Could not resolve "net"
+2025-04-28T13:13:53.877Z	  
+2025-04-28T13:13:53.878Z	      node_modules/express/lib/request.js:18:19:
+2025-04-28T13:13:53.878Z	        18 │ var isIP = require('net').isIP;
+2025-04-28T13:13:53.878Z	           ╵                    ~~~~~
+2025-04-28T13:13:53.878Z	  
+2025-04-28T13:13:53.878Z	    The package "net" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.879Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.879Z	    
+2025-04-28T13:13:53.879Z	  
+2025-04-28T13:13:53.879Z	  
+2025-04-28T13:13:53.879Z	  ✘ [ERROR] Could not resolve "http"
+2025-04-28T13:13:53.880Z	  
+2025-04-28T13:13:53.880Z	      node_modules/express/lib/request.js:20:19:
+2025-04-28T13:13:53.880Z	        20 │ var http = require('http');
+2025-04-28T13:13:53.880Z	           ╵                    ~~~~~~
+2025-04-28T13:13:53.880Z	  
+2025-04-28T13:13:53.881Z	    The package "http" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.881Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.881Z	    
+2025-04-28T13:13:53.881Z	  
+2025-04-28T13:13:53.881Z	  
+2025-04-28T13:13:53.882Z	  ✘ [ERROR] Could not resolve "http"
+2025-04-28T13:13:53.882Z	  
+2025-04-28T13:13:53.882Z	      node_modules/express/lib/response.js:21:19:
+2025-04-28T13:13:53.882Z	        21 │ var http = require('http');
+2025-04-28T13:13:53.883Z	           ╵                    ~~~~~~
+2025-04-28T13:13:53.884Z	  
+2025-04-28T13:13:53.884Z	    The package "http" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.884Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.885Z	    
+2025-04-28T13:13:53.885Z	  
+2025-04-28T13:13:53.885Z	  
+2025-04-28T13:13:53.885Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.885Z	  
+2025-04-28T13:13:53.886Z	      node_modules/express/lib/response.js:24:19:
+2025-04-28T13:13:53.886Z	        24 │ var path = require('path');
+2025-04-28T13:13:53.886Z	           ╵                    ~~~~~~
+2025-04-28T13:13:53.887Z	  
+2025-04-28T13:13:53.887Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.887Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.887Z	    
+2025-04-28T13:13:53.887Z	  
+2025-04-28T13:13:53.887Z	  
+2025-04-28T13:13:53.888Z	  ✘ [ERROR] Could not resolve "querystring"
+2025-04-28T13:13:53.888Z	  
+2025-04-28T13:13:53.888Z	      node_modules/express/lib/utils.js:24:26:
+2025-04-28T13:13:53.888Z	        24 │ var querystring = require('querystring');
+2025-04-28T13:13:53.888Z	           ╵                           ~~~~~~~~~~~~~
+2025-04-28T13:13:53.888Z	  
+2025-04-28T13:13:53.888Z	    The package "querystring" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.888Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.888Z	    
+2025-04-28T13:13:53.889Z	  
+2025-04-28T13:13:53.889Z	  
+2025-04-28T13:13:53.889Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.889Z	  
+2025-04-28T13:13:53.889Z	      node_modules/express/lib/view.js:17:19:
+2025-04-28T13:13:53.889Z	        17 │ var path = require('path');
+2025-04-28T13:13:53.889Z	           ╵                    ~~~~~~
+2025-04-28T13:13:53.889Z	  
+2025-04-28T13:13:53.889Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.890Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.890Z	    
+2025-04-28T13:13:53.890Z	  
+2025-04-28T13:13:53.890Z	  
+2025-04-28T13:13:53.890Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:53.890Z	  
+2025-04-28T13:13:53.890Z	      node_modules/express/lib/view.js:18:17:
+2025-04-28T13:13:53.890Z	        18 │ var fs = require('fs');
+2025-04-28T13:13:53.890Z	           ╵                  ~~~~
+2025-04-28T13:13:53.891Z	  
+2025-04-28T13:13:53.891Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.891Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.891Z	    
+2025-04-28T13:13:53.891Z	  
+2025-04-28T13:13:53.891Z	  
+2025-04-28T13:13:53.891Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.891Z	  
+2025-04-28T13:13:53.893Z	      node_modules/fs-extra/lib/copy/copy-sync.js:4:21:
+2025-04-28T13:13:53.893Z	        4 │ const path = require('path')
+2025-04-28T13:13:53.894Z	          ╵                      ~~~~~~
+2025-04-28T13:13:53.894Z	  
+2025-04-28T13:13:53.894Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.894Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.895Z	    
+2025-04-28T13:13:53.895Z	  
+2025-04-28T13:13:53.895Z	  
+2025-04-28T13:13:53.895Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.895Z	  
+2025-04-28T13:13:53.896Z	      node_modules/fs-extra/lib/copy/copy.js:4:21:
+2025-04-28T13:13:53.896Z	        4 │ const path = require('path')
+2025-04-28T13:13:53.896Z	          ╵                      ~~~~~~
+2025-04-28T13:13:53.896Z	  
+2025-04-28T13:13:53.897Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.897Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.898Z	    
+2025-04-28T13:13:53.899Z	  
+2025-04-28T13:13:53.899Z	  
+2025-04-28T13:13:53.899Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.899Z	  
+2025-04-28T13:13:53.901Z	      node_modules/fs-extra/lib/empty/index.js:5:21:
+2025-04-28T13:13:53.902Z	        5 │ const path = require('path')
+2025-04-28T13:13:53.903Z	          ╵                      ~~~~~~
+2025-04-28T13:13:53.906Z	  
+2025-04-28T13:13:53.907Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.908Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.908Z	    
+2025-04-28T13:13:53.908Z	  
+2025-04-28T13:13:53.908Z	  
+2025-04-28T13:13:53.909Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.909Z	  
+2025-04-28T13:13:53.909Z	      node_modules/fs-extra/lib/ensure/file.js:4:21:
+2025-04-28T13:13:53.909Z	        4 │ const path = require('path')
+2025-04-28T13:13:53.909Z	          ╵                      ~~~~~~
+2025-04-28T13:13:53.909Z	  
+2025-04-28T13:13:53.909Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.909Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.909Z	    
+2025-04-28T13:13:53.909Z	  
+2025-04-28T13:13:53.909Z	  
+2025-04-28T13:13:53.909Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.909Z	  
+2025-04-28T13:13:53.909Z	      node_modules/fs-extra/lib/ensure/link.js:4:21:
+2025-04-28T13:13:53.909Z	        4 │ const path = require('path')
+2025-04-28T13:13:53.909Z	          ╵                      ~~~~~~
+2025-04-28T13:13:53.909Z	  
+2025-04-28T13:13:53.909Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.909Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.910Z	    
+2025-04-28T13:13:53.910Z	  
+2025-04-28T13:13:53.910Z	  
+2025-04-28T13:13:53.910Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.910Z	  
+2025-04-28T13:13:53.910Z	      node_modules/fs-extra/lib/ensure/symlink-paths.js:3:21:
+2025-04-28T13:13:53.910Z	        3 │ const path = require('path')
+2025-04-28T13:13:53.910Z	          ╵                      ~~~~~~
+2025-04-28T13:13:53.910Z	  
+2025-04-28T13:13:53.910Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.910Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.910Z	    
+2025-04-28T13:13:53.910Z	  
+2025-04-28T13:13:53.910Z	  
+2025-04-28T13:13:53.910Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.910Z	  
+2025-04-28T13:13:53.910Z	      node_modules/fs-extra/lib/ensure/symlink.js:4:21:
+2025-04-28T13:13:53.910Z	        4 │ const path = require('path')
+2025-04-28T13:13:53.910Z	          ╵                      ~~~~~~
+2025-04-28T13:13:53.911Z	  
+2025-04-28T13:13:53.911Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.911Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.911Z	    
+2025-04-28T13:13:53.911Z	  
+2025-04-28T13:13:53.911Z	  
+2025-04-28T13:13:53.911Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.918Z	  
+2025-04-28T13:13:53.918Z	      node_modules/fs-extra/lib/mkdirs/utils.js:7:21:
+2025-04-28T13:13:53.918Z	        7 │ const path = require('path')
+2025-04-28T13:13:53.918Z	          ╵                      ~~~~~~
+2025-04-28T13:13:53.918Z	  
+2025-04-28T13:13:53.918Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.918Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.918Z	    
+2025-04-28T13:13:53.918Z	  
+2025-04-28T13:13:53.918Z	  
+2025-04-28T13:13:53.918Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.918Z	  
+2025-04-28T13:13:53.918Z	      node_modules/fs-extra/lib/move/move-sync.js:4:21:
+2025-04-28T13:13:53.918Z	        4 │ const path = require('path')
+2025-04-28T13:13:53.918Z	          ╵                      ~~~~~~
+2025-04-28T13:13:53.918Z	  
+2025-04-28T13:13:53.918Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.918Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.919Z	    
+2025-04-28T13:13:53.919Z	  
+2025-04-28T13:13:53.919Z	  
+2025-04-28T13:13:53.919Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.919Z	  
+2025-04-28T13:13:53.919Z	      node_modules/fs-extra/lib/move/move.js:4:21:
+2025-04-28T13:13:53.919Z	        4 │ const path = require('path')
+2025-04-28T13:13:53.919Z	          ╵                      ~~~~~~
+2025-04-28T13:13:53.919Z	  
+2025-04-28T13:13:53.919Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.922Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.922Z	    
+2025-04-28T13:13:53.922Z	  
+2025-04-28T13:13:53.922Z	  
+2025-04-28T13:13:53.922Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.922Z	  
+2025-04-28T13:13:53.922Z	      node_modules/fs-extra/lib/output-file/index.js:5:21:
+2025-04-28T13:13:53.922Z	        5 │ const path = require('path')
+2025-04-28T13:13:53.922Z	          ╵                      ~~~~~~
+2025-04-28T13:13:53.923Z	  
+2025-04-28T13:13:53.923Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.923Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.923Z	    
+2025-04-28T13:13:53.923Z	  
+2025-04-28T13:13:53.923Z	  
+2025-04-28T13:13:53.923Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.923Z	  
+2025-04-28T13:13:53.923Z	      node_modules/fs-extra/lib/util/stat.js:4:21:
+2025-04-28T13:13:53.923Z	        4 │ const path = require('path')
+2025-04-28T13:13:53.923Z	          ╵                      ~~~~~~
+2025-04-28T13:13:53.923Z	  
+2025-04-28T13:13:53.923Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.923Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.924Z	    
+2025-04-28T13:13:53.924Z	  
+2025-04-28T13:13:53.924Z	  
+2025-04-28T13:13:53.924Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:53.924Z	  
+2025-04-28T13:13:53.924Z	      node_modules/graceful-fs/graceful-fs.js:1:17:
+2025-04-28T13:13:53.924Z	        1 │ var fs = require('fs')
+2025-04-28T13:13:53.924Z	          ╵                  ~~~~
+2025-04-28T13:13:53.924Z	  
+2025-04-28T13:13:53.924Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.924Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.924Z	    
+2025-04-28T13:13:53.924Z	  
+2025-04-28T13:13:53.924Z	  
+2025-04-28T13:13:53.924Z	  ✘ [ERROR] Could not resolve "util"
+2025-04-28T13:13:53.924Z	  
+2025-04-28T13:13:53.925Z	      node_modules/graceful-fs/graceful-fs.js:6:19:
+2025-04-28T13:13:53.925Z	        6 │ var util = require('util')
+2025-04-28T13:13:53.925Z	          ╵                    ~~~~~~
+2025-04-28T13:13:53.925Z	  
+2025-04-28T13:13:53.925Z	    The package "util" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.925Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.925Z	    
+2025-04-28T13:13:53.925Z	  
+2025-04-28T13:13:53.925Z	  
+2025-04-28T13:13:53.925Z	  ✘ [ERROR] Could not resolve "assert"
+2025-04-28T13:13:53.925Z	  
+2025-04-28T13:13:53.925Z	      node_modules/graceful-fs/graceful-fs.js:87:14:
+2025-04-28T13:13:53.925Z	        87 │       require('assert').equal(fs[gracefulQueue].length, 0)
+2025-04-28T13:13:53.925Z	           ╵               ~~~~~~~~
+2025-04-28T13:13:53.925Z	  
+2025-04-28T13:13:53.925Z	    The package "assert" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.925Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.925Z	    
+2025-04-28T13:13:53.925Z	  
+2025-04-28T13:13:53.926Z	  
+2025-04-28T13:13:53.926Z	  ✘ [ERROR] Could not resolve "stream"
+2025-04-28T13:13:53.926Z	  
+2025-04-28T13:13:53.926Z	      node_modules/graceful-fs/legacy-streams.js:1:21:
+2025-04-28T13:13:53.926Z	        1 │ var Stream = require('stream').Stream
+2025-04-28T13:13:53.926Z	          ╵                      ~~~~~~~~
+2025-04-28T13:13:53.926Z	  
+2025-04-28T13:13:53.926Z	    The package "stream" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.926Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.928Z	    
+2025-04-28T13:13:53.928Z	  
+2025-04-28T13:13:53.929Z	  
+2025-04-28T13:13:53.929Z	  ✘ [ERROR] Could not resolve "constants"
+2025-04-28T13:13:53.929Z	  
+2025-04-28T13:13:53.929Z	      node_modules/graceful-fs/polyfills.js:1:24:
+2025-04-28T13:13:53.929Z	        1 │ var constants = require('constants')
+2025-04-28T13:13:53.929Z	          ╵                         ~~~~~~~~~~~
+2025-04-28T13:13:53.930Z	  
+2025-04-28T13:13:53.930Z	    The package "constants" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.930Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.930Z	    
+2025-04-28T13:13:53.930Z	  
+2025-04-28T13:13:53.930Z	  
+2025-04-28T13:13:53.930Z	  ✘ [ERROR] Could not resolve "string_decoder"
+2025-04-28T13:13:53.931Z	  
+2025-04-28T13:13:53.931Z	      node_modules/iconv-lite/encodings/internal.js:49:28:
+2025-04-28T13:13:53.931Z	        49 │ var StringDecoder = require('string_decoder').StringDecoder;
+2025-04-28T13:13:53.931Z	           ╵                             ~~~~~~~~~~~~~~~~
+2025-04-28T13:13:53.931Z	  
+2025-04-28T13:13:53.931Z	    The package "string_decoder" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.932Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.932Z	    
+2025-04-28T13:13:53.932Z	  
+2025-04-28T13:13:53.932Z	  
+2025-04-28T13:13:53.932Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:53.932Z	  
+2025-04-28T13:13:53.933Z	      node_modules/jpeg-exif/lib/index.js:3:18:
+2025-04-28T13:13:53.934Z	        3 │ var _fs = require('fs');
+2025-04-28T13:13:53.934Z	          ╵                   ~~~~
+2025-04-28T13:13:53.934Z	  
+2025-04-28T13:13:53.934Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.934Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.934Z	    
+2025-04-28T13:13:53.934Z	  
+2025-04-28T13:13:53.934Z	  
+2025-04-28T13:13:53.647Z	▲ [WARNING] 						The package "node:fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.648Z	
+2025-04-28T13:13:53.649Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.649Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.650Z	  - node_modules/@replit/vite-plugin-runtime-error-modal/dist/index.mjs
+2025-04-28T13:13:53.650Z	  - node_modules/@vitejs/plugin-react/dist/index.mjs
+2025-04-28T13:13:53.650Z	  - node_modules/connect-pg-simple/index.js
+2025-04-28T13:13:53.651Z	  - node_modules/rollup/dist/native.js
+2025-04-28T13:13:53.651Z	  - node_modules/vite/dist/node/constants.js
+2025-04-28T13:13:53.651Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.652Z	
+2025-04-28T13:13:53.652Z	
+2025-04-28T13:13:53.652Z	▲ [WARNING] 						The package "node:path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.652Z	
+2025-04-28T13:13:53.652Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.653Z	  						 - node_modules/connect-pg-simple/index.js
+2025-04-28T13:13:53.653Z	  - node_modules/@vitejs/plugin-react/dist/index.mjs
+2025-04-28T13:13:53.653Z	  - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.653Z	  - node_modules/vite/dist/node/constants.js
+2025-04-28T13:13:53.654Z	  - node_modules/rollup/dist/es/parseAst.js
+2025-04-28T13:13:53.655Z	  - node_modules/rollup/dist/es/shared/parseAst.js
+2025-04-28T13:13:53.655Z	  - node_modules/rollup/dist/native.js
+2025-04-28T13:13:53.655Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.655Z	  - node_modules/rollup/dist/es/rollup.js
+2025-04-28T13:13:53.655Z	  - node_modules/vite/dist/node/chunks/dep-D0tGukau.js
+2025-04-28T13:13:53.656Z	  - node_modules/vite/dist/node/chunks/dep-DIiRB4RW.js
+2025-04-28T13:13:53.656Z	  - node_modules/vite/dist/node/chunks/dep-D-7KCb9p.js
+2025-04-28T13:13:53.656Z	  - node_modules/vite/dist/node/chunks/dep-IQS-Za7F.js
+2025-04-28T13:13:53.656Z	  - node_modules/rollup/dist/es/shared/node-entry.js
+2025-04-28T13:13:53.658Z	  - node_modules/rollup/dist/es/shared/watch.js
+2025-04-28T13:13:53.658Z	
+2025-04-28T13:13:53.658Z	
+2025-04-28T13:13:53.659Z	▲ [WARNING] 						The package "node:fs/promises" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.659Z	
+2025-04-28T13:13:53.659Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.659Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.660Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.660Z	  - node_modules/rollup/dist/es/rollup.js
+2025-04-28T13:13:53.660Z	  - node_modules/rollup/dist/es/shared/node-entry.js
+2025-04-28T13:13:53.660Z	  - node_modules/rollup/dist/es/shared/watch.js
+2025-04-28T13:13:53.660Z	
+2025-04-28T13:13:53.660Z	
+2025-04-28T13:13:53.661Z	▲ [WARNING] 						The package "node:module" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.661Z	
+2025-04-28T13:13:53.661Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.661Z	  						 - node_modules/@vitejs/plugin-react/dist/index.mjs
+2025-04-28T13:13:53.662Z	  - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.662Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.662Z	  - node_modules/vite/dist/node/chunks/dep-DIiRB4RW.js
+2025-04-28T13:13:53.662Z	  - node_modules/vite/dist/node/chunks/dep-D0tGukau.js
+2025-04-28T13:13:53.662Z	  - node_modules/vite/dist/node/chunks/dep-D-7KCb9p.js
+2025-04-28T13:13:53.662Z	  - node_modules/vite/dist/node/chunks/dep-IQS-Za7F.js
+2025-04-28T13:13:53.663Z	
+2025-04-28T13:13:53.663Z	
+2025-04-28T13:13:53.663Z	▲ [WARNING] 						The package "node:url" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.663Z	
+2025-04-28T13:13:53.663Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.663Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.663Z	  - node_modules/vite/dist/node/constants.js
+2025-04-28T13:13:53.664Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.664Z	  - node_modules/vite/dist/node/chunks/dep-D0tGukau.js
+2025-04-28T13:13:53.664Z	  - node_modules/vite/dist/node/chunks/dep-DIiRB4RW.js
+2025-04-28T13:13:53.664Z	  - node_modules/vite/dist/node/chunks/dep-D-7KCb9p.js
+2025-04-28T13:13:53.664Z	  - node_modules/vite/dist/node/chunks/dep-IQS-Za7F.js
+2025-04-28T13:13:53.664Z	
+2025-04-28T13:13:53.665Z	
+2025-04-28T13:13:53.665Z	▲ [WARNING] 						The package "node:util" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.665Z	
+2025-04-28T13:13:53.665Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.665Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.665Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.665Z	
+2025-04-28T13:13:53.666Z	
+2025-04-28T13:13:53.666Z	▲ [WARNING] 						The package "node:perf_hooks" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.666Z	
+2025-04-28T13:13:53.666Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.666Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.666Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.666Z	  - node_modules/rollup/dist/es/rollup.js
+2025-04-28T13:13:53.667Z	  - node_modules/rollup/dist/es/shared/node-entry.js
+2025-04-28T13:13:53.667Z	  - node_modules/rollup/dist/es/shared/watch.js
+2025-04-28T13:13:53.667Z	
+2025-04-28T13:13:53.668Z	
+2025-04-28T13:13:53.668Z	▲ [WARNING] 						The package "node:crypto" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.668Z	
+2025-04-28T13:13:53.668Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.669Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.669Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.669Z	
+2025-04-28T13:13:53.669Z	
+2025-04-28T13:13:53.669Z	▲ [WARNING] 						The package "node:events" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.670Z	
+2025-04-28T13:13:53.670Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.670Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.670Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.670Z	
+2025-04-28T13:13:53.670Z	
+2025-04-28T13:13:53.671Z	▲ [WARNING] 						The package "node:stream" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.671Z	
+2025-04-28T13:13:53.671Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.671Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.672Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.672Z	
+2025-04-28T13:13:53.672Z	
+2025-04-28T13:13:53.672Z	▲ [WARNING] 						The package "node:string_decoder" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.672Z	
+2025-04-28T13:13:53.673Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.673Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.673Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.673Z	
+2025-04-28T13:13:53.673Z	
+2025-04-28T13:13:53.674Z	▲ [WARNING] 						The package "node:child_process" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.674Z	
+2025-04-28T13:13:53.674Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.674Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.674Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.675Z	
+2025-04-28T13:13:53.675Z	
+2025-04-28T13:13:53.675Z	▲ [WARNING] 						The package "node:http" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.675Z	
+2025-04-28T13:13:53.675Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.676Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.676Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.676Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.676Z	
+2025-04-28T13:13:53.676Z	
+2025-04-28T13:13:53.677Z	▲ [WARNING] 						The package "node:https" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.677Z	
+2025-04-28T13:13:53.677Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.677Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.677Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.678Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.678Z	
+2025-04-28T13:13:53.678Z	
+2025-04-28T13:13:53.678Z	▲ [WARNING] 						The package "node:os" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.678Z	
+2025-04-28T13:13:53.679Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.679Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.679Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.679Z	  - node_modules/rollup/dist/es/shared/watch.js
+2025-04-28T13:13:53.680Z	
+2025-04-28T13:13:53.680Z	
+2025-04-28T13:13:53.680Z	▲ [WARNING] 						The package "node:dns" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.680Z	
+2025-04-28T13:13:53.680Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.681Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.681Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.682Z	
+2025-04-28T13:13:53.682Z	
+2025-04-28T13:13:53.682Z	▲ [WARNING] 						The package "node:assert" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.682Z	
+2025-04-28T13:13:53.683Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.683Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.683Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.683Z	
+2025-04-28T13:13:53.683Z	
+2025-04-28T13:13:53.684Z	▲ [WARNING] 						The package "node:v8" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.684Z	
+2025-04-28T13:13:53.684Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.685Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.685Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.685Z	
+2025-04-28T13:13:53.685Z	
+2025-04-28T13:13:53.685Z	▲ [WARNING] 						The package "node:worker_threads" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.686Z	
+2025-04-28T13:13:53.686Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.686Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.686Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.686Z	
+2025-04-28T13:13:53.686Z	
+2025-04-28T13:13:53.687Z	▲ [WARNING] 						The package "node:buffer" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.687Z	
+2025-04-28T13:13:53.687Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.687Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.687Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.688Z	
+2025-04-28T13:13:53.688Z	
+2025-04-28T13:13:53.688Z	▲ [WARNING] 						The package "node:readline" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.688Z	
+2025-04-28T13:13:53.688Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.689Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.689Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.689Z	
+2025-04-28T13:13:53.689Z	
+2025-04-28T13:13:53.689Z	▲ [WARNING] 						The package "node:net" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.690Z	
+2025-04-28T13:13:53.691Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.691Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.692Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.693Z	
+2025-04-28T13:13:53.693Z	
+2025-04-28T13:13:53.693Z	▲ [WARNING] 						The package "node:zlib" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.694Z	
+2025-04-28T13:13:53.694Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.694Z	  						 - node_modules/vite/dist/node/index.js
+2025-04-28T13:13:53.694Z	  - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.694Z	
+2025-04-28T13:13:53.695Z	
+2025-04-28T13:13:53.695Z	▲ [WARNING] 						The package "node:process" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.695Z	
+2025-04-28T13:13:53.695Z	  						Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.695Z	  						 - node_modules/rollup/dist/native.js
+2025-04-28T13:13:53.695Z	  - node_modules/rollup/dist/es/rollup.js
+2025-04-28T13:13:53.696Z	  - node_modules/rollup/dist/es/shared/node-entry.js
+2025-04-28T13:13:53.696Z	  - node_modules/rollup/dist/es/shared/watch.js
+2025-04-28T13:13:53.696Z	
+2025-04-28T13:13:53.696Z	
+2025-04-28T13:13:53.696Z	▲ [WARNING] The package "node:http2" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.696Z	
+2025-04-28T13:13:53.697Z	  Your Worker may throw errors at runtime unless you enable the "nodejs_compat" compatibility flag. Refer to https://developers.cloudflare.com/workers/runtime-apis/nodejs/ for more details. Imported from:
+2025-04-28T13:13:53.697Z	   - node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js
+2025-04-28T13:13:53.697Z	
+2025-04-28T13:13:53.697Z	
+2025-04-28T13:13:53.698Z	▲ [WARNING] "import.meta" is not available with the "iife" output format and will be empty [empty-import-meta]
+2025-04-28T13:13:53.698Z	
+2025-04-28T13:13:53.698Z	    dist/index.js:446:32:
+2025-04-28T13:13:53.698Z	      446 │   const goServerDir = path.join(import.meta.dirname, "go");
+2025-04-28T13:13:53.699Z	          ╵                                 ~~~~~~~~~~~
+2025-04-28T13:13:53.699Z	
+2025-04-28T13:13:53.699Z	  You need to set the output format to "esm" for "import.meta" to work correctly.
+2025-04-28T13:13:53.699Z	
+2025-04-28T13:13:53.699Z	
+2025-04-28T13:13:53.700Z	▲ [WARNING] "import.meta" is not available with the "iife" output format and will be empty [empty-import-meta]
+2025-04-28T13:13:53.700Z	
+2025-04-28T13:13:53.700Z	    dist/index.js:814:25:
+2025-04-28T13:13:53.700Z	      814 │       "@": path2.resolve(import.meta.dirname, "client", "src"),
+2025-04-28T13:13:53.701Z	          ╵                          ~~~~~~~~~~~
+2025-04-28T13:13:53.701Z	
+2025-04-28T13:13:53.701Z	  You need to set the output format to "esm" for "import.meta" to work correctly.
+2025-04-28T13:13:53.701Z	
+2025-04-28T13:13:53.701Z	
+2025-04-28T13:13:53.701Z	▲ [WARNING] "import.meta" is not available with the "iife" output format and will be empty [empty-import-meta]
+2025-04-28T13:13:53.702Z	
+2025-04-28T13:13:53.702Z	    dist/index.js:815:31:
+2025-04-28T13:13:53.702Z	      815 │       "@shared": path2.resolve(import.meta.dirname, "shared"),
+2025-04-28T13:13:53.702Z	          ╵                                ~~~~~~~~~~~
+2025-04-28T13:13:53.702Z	
+2025-04-28T13:13:53.702Z	  You need to set the output format to "esm" for "import.meta" to work correctly.
+2025-04-28T13:13:53.703Z	
+2025-04-28T13:13:53.703Z	
+2025-04-28T13:13:53.703Z	▲ [WARNING] "import.meta" is not available with the "iife" output format and will be empty [empty-import-meta]
+2025-04-28T13:13:53.703Z	
+2025-04-28T13:13:53.703Z	    dist/index.js:816:31:
+2025-04-28T13:13:53.703Z	      816 │ ... "@assets": path2.resolve(import.meta.dirname, "attached_assets")
+2025-04-28T13:13:53.704Z	          ╵                              ~~~~~~~~~~~
+2025-04-28T13:13:53.704Z	
+2025-04-28T13:13:53.704Z	  You need to set the output format to "esm" for "import.meta" to work correctly.
+2025-04-28T13:13:53.704Z	
+2025-04-28T13:13:53.704Z	
+2025-04-28T13:13:53.704Z	▲ [WARNING] "import.meta" is not available with the "iife" output format and will be empty [empty-import-meta]
+2025-04-28T13:13:53.704Z	
+2025-04-28T13:13:53.704Z	    dist/index.js:819:22:
+2025-04-28T13:13:53.705Z	      819 │   root: path2.resolve(import.meta.dirname, "client"),
+2025-04-28T13:13:53.706Z	          ╵                       ~~~~~~~~~~~
+2025-04-28T13:13:53.706Z	
+2025-04-28T13:13:53.706Z	  You need to set the output format to "esm" for "import.meta" to work correctly.
+2025-04-28T13:13:53.706Z	
+2025-04-28T13:13:53.706Z	
+2025-04-28T13:13:53.706Z	▲ [WARNING] "import.meta" is not available with the "iife" output format and will be empty [empty-import-meta]
+2025-04-28T13:13:53.706Z	
+2025-04-28T13:13:53.706Z	    dist/index.js:821:26:
+2025-04-28T13:13:53.706Z	      821 │     outDir: path2.resolve(import.meta.dirname, "dist/public"),
+2025-04-28T13:13:53.707Z	          ╵                           ~~~~~~~~~~~
+2025-04-28T13:13:53.707Z	
+2025-04-28T13:13:53.707Z	  You need to set the output format to "esm" for "import.meta" to work correctly.
+2025-04-28T13:13:53.707Z	
+2025-04-28T13:13:53.707Z	
+2025-04-28T13:13:53.707Z	▲ [WARNING] "import.meta" is not available with the "iife" output format and will be empty [empty-import-meta]
+2025-04-28T13:13:53.707Z	
+2025-04-28T13:13:53.708Z	    dist/index.js:881:33:
+2025-04-28T13:13:53.708Z	      881 │   const distPath = path3.resolve(import.meta.dirname, "public");
+2025-04-28T13:13:53.708Z	          ╵                                  ~~~~~~~~~~~
+2025-04-28T13:13:53.708Z	
+2025-04-28T13:13:53.709Z	  You need to set the output format to "esm" for "import.meta" to work correctly.
+2025-04-28T13:13:53.709Z	
+2025-04-28T13:13:53.709Z	
+2025-04-28T13:13:53.709Z	▲ [WARNING] The glob pattern require("../lightningcss.*.node") did not match any files [empty-glob]
+2025-04-28T13:13:53.709Z	
+2025-04-28T13:13:53.710Z	    node_modules/lightningcss/node/index.js:22:29:
+2025-04-28T13:13:53.710Z	      22 │ ...dule.exports = require(`../lightningcss.${parts.join('-')}.node`);
+2025-04-28T13:13:53.710Z	         ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-04-28T13:13:53.711Z	
+2025-04-28T13:13:53.711Z	
+2025-04-28T13:13:53.712Z	
+2025-04-28T13:13:53.763Z	✘ [ERROR] Build failed with 177 errors:
+2025-04-28T13:13:53.763Z	
+2025-04-28T13:13:53.764Z	  ✘ [ERROR] Could not resolve "http"
+2025-04-28T13:13:53.764Z	  
+2025-04-28T13:13:53.764Z	      dist/index.js:89:29:
+2025-04-28T13:13:53.764Z	        89 │ import { createServer } from "http";
+2025-04-28T13:13:53.765Z	           ╵                              ~~~~~~
+2025-04-28T13:13:53.765Z	  
+2025-04-28T13:13:53.765Z	    The package "http" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.765Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.765Z	    
+2025-04-28T13:13:53.766Z	  
+2025-04-28T13:13:53.766Z	  
+2025-04-28T13:13:53.766Z	  ✘ [ERROR] Could not resolve "child_process"
+2025-04-28T13:13:53.766Z	  
+2025-04-28T13:13:53.766Z	      dist/index.js:303:21:
+2025-04-28T13:13:53.769Z	        303 │ import { exec } from "child_process";
+2025-04-28T13:13:53.769Z	            ╵                      ~~~~~~~~~~~~~~~
+2025-04-28T13:13:53.770Z	  
+2025-04-28T13:13:53.770Z	    The package "child_process" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.770Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.770Z	    
+2025-04-28T13:13:53.770Z	  
+2025-04-28T13:13:53.771Z	  
+2025-04-28T13:13:53.771Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.771Z	  
+2025-04-28T13:13:53.771Z	      dist/index.js:304:17:
+2025-04-28T13:13:53.771Z	        304 │ import path from "path";
+2025-04-28T13:13:53.772Z	            ╵                  ~~~~~~
+2025-04-28T13:13:53.772Z	  
+2025-04-28T13:13:53.772Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.772Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.772Z	    
+2025-04-28T13:13:53.772Z	  
+2025-04-28T13:13:53.773Z	  
+2025-04-28T13:13:53.773Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:53.773Z	  
+2025-04-28T13:13:53.773Z	      dist/index.js:305:16:
+2025-04-28T13:13:53.775Z	        305 │ import fs2 from "fs";
+2025-04-28T13:13:53.775Z	            ╵                 ~~~~
+2025-04-28T13:13:53.776Z	  
+2025-04-28T13:13:53.776Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.776Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.776Z	    
+2025-04-28T13:13:53.776Z	  
+2025-04-28T13:13:53.776Z	  
+2025-04-28T13:13:53.776Z	  ✘ [ERROR] Could not resolve "crypto"
+2025-04-28T13:13:53.777Z	  
+2025-04-28T13:13:53.777Z	      dist/index.js:313:53:
+2025-04-28T13:13:53.777Z	        313 │ import { scrypt, randomBytes, timingSafeEqual } from "crypto";
+2025-04-28T13:13:53.777Z	            ╵                                                      ~~~~~~~~
+2025-04-28T13:13:53.777Z	  
+2025-04-28T13:13:53.777Z	    The package "crypto" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.777Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.777Z	    
+2025-04-28T13:13:53.777Z	  
+2025-04-28T13:13:53.779Z	  
+2025-04-28T13:13:53.780Z	  ✘ [ERROR] Could not resolve "util"
+2025-04-28T13:13:53.780Z	  
+2025-04-28T13:13:53.780Z	      dist/index.js:314:26:
+2025-04-28T13:13:53.781Z	        314 │ import { promisify } from "util";
+2025-04-28T13:13:53.781Z	            ╵                           ~~~~~~
+2025-04-28T13:13:53.781Z	  
+2025-04-28T13:13:53.781Z	    The package "util" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.781Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.781Z	    
+2025-04-28T13:13:53.782Z	  
+2025-04-28T13:13:53.782Z	  
+2025-04-28T13:13:53.782Z	  ✘ [ERROR] Top-level await is currently not supported with the "iife" output format
+2025-04-28T13:13:53.782Z	  
+2025-04-28T13:13:53.782Z	      dist/index.js:807:6:
+2025-04-28T13:13:53.782Z	        807 │       await import("@replit/vite-plugin-cartographer").then(
+2025-04-28T13:13:53.783Z	            ╵       ~~~~~
+2025-04-28T13:13:53.783Z	  
+2025-04-28T13:13:53.783Z	  
+2025-04-28T13:13:53.783Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.783Z	  
+2025-04-28T13:13:53.784Z	      node_modules/@babel/core/lib/config/config-chain.js:10:23:
+2025-04-28T13:13:53.784Z	        10 │   const data = require("path");
+2025-04-28T13:13:53.784Z	           ╵                        ~~~~~~
+2025-04-28T13:13:53.784Z	  
+2025-04-28T13:13:53.784Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.785Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.785Z	    
+2025-04-28T13:13:53.785Z	  
+2025-04-28T13:13:53.785Z	  
+2025-04-28T13:13:53.785Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.785Z	  
+2025-04-28T13:13:53.786Z	      node_modules/@babel/core/lib/config/item.js:10:23:
+2025-04-28T13:13:53.786Z	        10 │   const data = require("path");
+2025-04-28T13:13:53.787Z	           ╵                        ~~~~~~
+2025-04-28T13:13:53.787Z	  
+2025-04-28T13:13:53.787Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.787Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.788Z	    
+2025-04-28T13:13:53.788Z	  
+2025-04-28T13:13:53.788Z	  
+2025-04-28T13:13:53.788Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.788Z	  
+2025-04-28T13:13:53.789Z	      node_modules/@babel/core/lib/config/partial.js:9:23:
+2025-04-28T13:13:53.789Z	        9 │   const data = require("path");
+2025-04-28T13:13:53.789Z	          ╵                        ~~~~~~
+2025-04-28T13:13:53.790Z	  
+2025-04-28T13:13:53.790Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.790Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.790Z	    
+2025-04-28T13:13:53.791Z	  
+2025-04-28T13:13:53.791Z	  
+2025-04-28T13:13:53.796Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.798Z	  
+2025-04-28T13:13:53.798Z	      node_modules/@babel/core/lib/config/pattern-to-regex.js:8:23:
+2025-04-28T13:13:53.799Z	        8 │   const data = require("path");
+2025-04-28T13:13:53.799Z	          ╵                        ~~~~~~
+2025-04-28T13:13:53.799Z	  
+2025-04-28T13:13:53.799Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.800Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.801Z	    
+2025-04-28T13:13:53.801Z	  
+2025-04-28T13:13:53.802Z	  
+2025-04-28T13:13:53.802Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:53.802Z	  
+2025-04-28T13:13:53.802Z	      node_modules/@babel/core/lib/transformation/normalize-file.js:8:23:
+2025-04-28T13:13:53.802Z	        8 │   const data = require("fs");
+2025-04-28T13:13:53.803Z	          ╵                        ~~~~
+2025-04-28T13:13:53.803Z	  
+2025-04-28T13:13:53.803Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.803Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.804Z	    
+2025-04-28T13:13:53.804Z	  
+2025-04-28T13:13:53.804Z	  
+2025-04-28T13:13:53.804Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.804Z	  
+2025-04-28T13:13:53.805Z	      node_modules/@babel/core/lib/transformation/normalize-file.js:15:23:
+2025-04-28T13:13:53.805Z	        15 │   const data = require("path");
+2025-04-28T13:13:53.805Z	           ╵                        ~~~~~~
+2025-04-28T13:13:53.806Z	  
+2025-04-28T13:13:53.807Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.808Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.808Z	    
+2025-04-28T13:13:53.808Z	  
+2025-04-28T13:13:53.808Z	  
+2025-04-28T13:13:53.809Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.809Z	  
+2025-04-28T13:13:53.809Z	      node_modules/@babel/core/lib/transformation/normalize-opts.js:8:23:
+2025-04-28T13:13:53.811Z	        8 │   const data = require("path");
+2025-04-28T13:13:53.812Z	          ╵                        ~~~~~~
+2025-04-28T13:13:53.812Z	  
+2025-04-28T13:13:53.812Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.812Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.812Z	    
+2025-04-28T13:13:53.813Z	  
+2025-04-28T13:13:53.813Z	  
+2025-04-28T13:13:53.813Z	  ✘ [ERROR] Could not resolve "assert"
+2025-04-28T13:13:53.813Z	  
+2025-04-28T13:13:53.813Z	      node_modules/@babel/helper-module-imports/lib/import-builder.js:7:22:
+2025-04-28T13:13:53.813Z	        7 │ var _assert = require("assert");
+2025-04-28T13:13:53.813Z	          ╵                       ~~~~~~~~
+2025-04-28T13:13:53.813Z	  
+2025-04-28T13:13:53.818Z	    The package "assert" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.818Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.819Z	    
+2025-04-28T13:13:53.934Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:53.934Z	  
+2025-04-28T13:13:53.934Z	      node_modules/jsonfile/index.js:5:16:
+2025-04-28T13:13:53.934Z	        5 │   _fs = require('fs')
+2025-04-28T13:13:53.934Z	          ╵                 ~~~~
+2025-04-28T13:13:53.935Z	  
+2025-04-28T13:13:53.935Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.935Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.935Z	    
+2025-04-28T13:13:53.935Z	  
+2025-04-28T13:13:53.935Z	  
+2025-04-28T13:13:53.935Z	  ✘ [ERROR] Could not resolve "../pkg"
+2025-04-28T13:13:53.935Z	  
+2025-04-28T13:13:53.935Z	      node_modules/lightningcss/node/index.js:17:27:
+2025-04-28T13:13:53.935Z	        17 │   module.exports = require(`../pkg`);
+2025-04-28T13:13:53.936Z	           ╵                            ~~~~~~~~
+2025-04-28T13:13:53.936Z	  
+2025-04-28T13:13:53.936Z	  
+2025-04-28T13:13:53.936Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.936Z	  
+2025-04-28T13:13:53.936Z	      node_modules/mime-types/index.js:16:22:
+2025-04-28T13:13:53.936Z	        16 │ var extname = require('path').extname
+2025-04-28T13:13:53.936Z	           ╵                       ~~~~~~
+2025-04-28T13:13:53.937Z	  
+2025-04-28T13:13:53.937Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.937Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.937Z	    
+2025-04-28T13:13:53.937Z	  
+2025-04-28T13:13:53.937Z	  
+2025-04-28T13:13:53.937Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.937Z	  
+2025-04-28T13:13:53.937Z	      node_modules/mime/mime.js:1:19:
+2025-04-28T13:13:53.938Z	        1 │ var path = require('path');
+2025-04-28T13:13:53.938Z	          ╵                    ~~~~~~
+2025-04-28T13:13:53.938Z	  
+2025-04-28T13:13:53.938Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.938Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.938Z	    
+2025-04-28T13:13:53.938Z	  
+2025-04-28T13:13:53.938Z	  
+2025-04-28T13:13:53.938Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:53.938Z	  
+2025-04-28T13:13:53.938Z	      node_modules/mime/mime.js:2:17:
+2025-04-28T13:13:53.939Z	        2 │ var fs = require('fs');
+2025-04-28T13:13:53.939Z	          ╵                  ~~~~
+2025-04-28T13:13:53.939Z	  
+2025-04-28T13:13:53.939Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.939Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.940Z	    
+2025-04-28T13:13:53.940Z	  
+2025-04-28T13:13:53.940Z	  
+2025-04-28T13:13:53.940Z	  ✘ [ERROR] Could not resolve "url"
+2025-04-28T13:13:53.940Z	  
+2025-04-28T13:13:53.940Z	      node_modules/parseurl/index.js:15:18:
+2025-04-28T13:13:53.940Z	        15 │ var url = require('url')
+2025-04-28T13:13:53.940Z	           ╵                   ~~~~~
+2025-04-28T13:13:53.940Z	  
+2025-04-28T13:13:53.940Z	    The package "url" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.940Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.940Z	    
+2025-04-28T13:13:53.941Z	  
+2025-04-28T13:13:53.941Z	  
+2025-04-28T13:13:53.941Z	  ✘ [ERROR] Could not resolve "util"
+2025-04-28T13:13:53.941Z	  
+2025-04-28T13:13:53.941Z	      node_modules/passport-local/lib/strategy.js:5:19:
+2025-04-28T13:13:53.941Z	        5 │   , util = require('util')
+2025-04-28T13:13:53.941Z	          ╵                    ~~~~~~
+2025-04-28T13:13:53.941Z	  
+2025-04-28T13:13:53.941Z	    The package "util" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.941Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.941Z	    
+2025-04-28T13:13:53.941Z	  
+2025-04-28T13:13:53.942Z	  
+2025-04-28T13:13:53.942Z	  ✘ [ERROR] Could not resolve "http"
+2025-04-28T13:13:53.942Z	  
+2025-04-28T13:13:53.942Z	      node_modules/passport/lib/middleware/authenticate.js:4:19:
+2025-04-28T13:13:53.942Z	        4 │ var http = require('http')
+2025-04-28T13:13:53.942Z	          ╵                    ~~~~~~
+2025-04-28T13:13:53.942Z	  
+2025-04-28T13:13:53.942Z	    The package "http" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.942Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.942Z	    
+2025-04-28T13:13:53.942Z	  
+2025-04-28T13:13:53.942Z	  
+2025-04-28T13:13:53.942Z	  ✘ [ERROR] Could not resolve "util"
+2025-04-28T13:13:53.942Z	  
+2025-04-28T13:13:53.942Z	      node_modules/passport/lib/strategies/session.js:3:19:
+2025-04-28T13:13:53.943Z	        3 │   , util = require('util')
+2025-04-28T13:13:53.943Z	          ╵                    ~~~~~~
+2025-04-28T13:13:53.943Z	  
+2025-04-28T13:13:53.943Z	    The package "util" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.943Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.943Z	    
+2025-04-28T13:13:53.943Z	  
+2025-04-28T13:13:53.943Z	  
+2025-04-28T13:13:53.947Z	  ✘ [ERROR] Could not resolve "stream"
+2025-04-28T13:13:53.947Z	  
+2025-04-28T13:13:53.947Z	      node_modules/pdfkit/js/pdfkit.es.js:1:19:
+2025-04-28T13:13:53.948Z	        1 │ import stream from 'stream';
+2025-04-28T13:13:53.948Z	          ╵                    ~~~~~~~~
+2025-04-28T13:13:53.948Z	  
+2025-04-28T13:13:53.948Z	    The package "stream" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.948Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.948Z	    
+2025-04-28T13:13:53.948Z	  
+2025-04-28T13:13:53.948Z	  
+2025-04-28T13:13:53.948Z	  ✘ [ERROR] Could not resolve "zlib"
+2025-04-28T13:13:53.948Z	  
+2025-04-28T13:13:53.948Z	      node_modules/pdfkit/js/pdfkit.es.js:2:17:
+2025-04-28T13:13:53.949Z	        2 │ import zlib from 'zlib';
+2025-04-28T13:13:53.949Z	          ╵                  ~~~~~~
+2025-04-28T13:13:53.949Z	  
+2025-04-28T13:13:53.949Z	    The package "zlib" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.950Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.950Z	    
+2025-04-28T13:13:53.950Z	  
+2025-04-28T13:13:53.950Z	  
+2025-04-28T13:13:53.950Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:53.950Z	  
+2025-04-28T13:13:53.950Z	      node_modules/pdfkit/js/pdfkit.es.js:4:15:
+2025-04-28T13:13:53.950Z	        4 │ import fs from 'fs';
+2025-04-28T13:13:53.950Z	          ╵                ~~~~
+2025-04-28T13:13:53.950Z	  
+2025-04-28T13:13:53.950Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.950Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.950Z	    
+2025-04-28T13:13:53.950Z	  
+2025-04-28T13:13:53.950Z	  
+2025-04-28T13:13:53.950Z	  ✘ [ERROR] Could not resolve "events"
+2025-04-28T13:13:53.950Z	  
+2025-04-28T13:13:53.950Z	      node_modules/pdfkit/js/pdfkit.es.js:6:29:
+2025-04-28T13:13:53.951Z	        6 │ import { EventEmitter } from 'events';
+2025-04-28T13:13:53.951Z	          ╵                              ~~~~~~~~
+2025-04-28T13:13:53.951Z	  
+2025-04-28T13:13:53.951Z	    The package "events" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.951Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.951Z	    
+2025-04-28T13:13:53.951Z	  
+2025-04-28T13:13:53.951Z	  
+2025-04-28T13:13:53.951Z	  ✘ [ERROR] Could not resolve "events"
+2025-04-28T13:13:53.951Z	  
+2025-04-28T13:13:53.951Z	      node_modules/pg-cloudflare/dist/index.js:1:29:
+2025-04-28T13:13:53.951Z	        1 │ import { EventEmitter } from 'events';
+2025-04-28T13:13:53.951Z	          ╵                              ~~~~~~~~
+2025-04-28T13:13:53.951Z	  
+2025-04-28T13:13:53.951Z	    The package "events" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.951Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.951Z	    
+2025-04-28T13:13:53.952Z	  
+2025-04-28T13:13:53.952Z	  
+2025-04-28T13:13:53.952Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:53.952Z	  
+2025-04-28T13:13:53.952Z	      node_modules/pg-connection-string/index.js:76:77:
+2025-04-28T13:13:53.952Z	        76 │ ...cert || config.sslkey || config.sslrootcert ? require('fs') : null
+2025-04-28T13:13:53.952Z	           ╵                                                          ~~~~
+2025-04-28T13:13:53.952Z	  
+2025-04-28T13:13:53.952Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.952Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.952Z	    
+2025-04-28T13:13:53.952Z	  
+2025-04-28T13:13:53.952Z	  
+2025-04-28T13:13:53.952Z	  ✘ [ERROR] Could not resolve "events"
+2025-04-28T13:13:53.952Z	  
+2025-04-28T13:13:53.952Z	      node_modules/pg-pool/index.js:2:29:
+2025-04-28T13:13:53.952Z	        2 │ const EventEmitter = require('events').EventEmitter
+2025-04-28T13:13:53.952Z	          ╵                              ~~~~~~~~
+2025-04-28T13:13:53.952Z	  
+2025-04-28T13:13:53.952Z	    The package "events" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.953Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.953Z	    
+2025-04-28T13:13:53.953Z	  
+2025-04-28T13:13:53.953Z	  
+2025-04-28T13:13:53.953Z	  ✘ [ERROR] Could not resolve "events"
+2025-04-28T13:13:53.953Z	  
+2025-04-28T13:13:53.953Z	      node_modules/pg/lib/client.js:3:27:
+2025-04-28T13:13:53.953Z	        3 │ var EventEmitter = require('events').EventEmitter
+2025-04-28T13:13:53.953Z	          ╵                            ~~~~~~~~
+2025-04-28T13:13:53.953Z	  
+2025-04-28T13:13:53.953Z	    The package "events" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.953Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.953Z	    
+2025-04-28T13:13:53.953Z	  
+2025-04-28T13:13:53.953Z	  
+2025-04-28T13:13:53.953Z	  ✘ [ERROR] Could not resolve "dns"
+2025-04-28T13:13:53.953Z	  
+2025-04-28T13:13:53.953Z	      node_modules/pg/lib/connection-parameters.js:3:18:
+2025-04-28T13:13:53.953Z	        3 │ var dns = require('dns')
+2025-04-28T13:13:53.953Z	          ╵                   ~~~~~
+2025-04-28T13:13:53.953Z	  
+2025-04-28T13:13:53.953Z	    The package "dns" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.953Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.953Z	    
+2025-04-28T13:13:53.954Z	  
+2025-04-28T13:13:53.954Z	  
+2025-04-28T13:13:53.954Z	  ✘ [ERROR] Could not resolve "events"
+2025-04-28T13:13:53.954Z	  
+2025-04-28T13:13:53.954Z	      node_modules/pg/lib/connection.js:3:27:
+2025-04-28T13:13:53.954Z	        3 │ var EventEmitter = require('events').EventEmitter
+2025-04-28T13:13:53.954Z	          ╵                            ~~~~~~~~
+2025-04-28T13:13:53.954Z	  
+2025-04-28T13:13:53.954Z	    The package "events" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.954Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.954Z	    
+2025-04-28T13:13:53.954Z	  
+2025-04-28T13:13:53.954Z	  
+2025-04-28T13:13:53.954Z	  ✘ [ERROR] Could not resolve "net"
+2025-04-28T13:13:53.954Z	  
+2025-04-28T13:13:53.954Z	      node_modules/pg/lib/connection.js:94:24:
+2025-04-28T13:13:53.954Z	        94 │       var net = require('net')
+2025-04-28T13:13:53.954Z	           ╵                         ~~~~~
+2025-04-28T13:13:53.954Z	  
+2025-04-28T13:13:53.954Z	    The package "net" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.954Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.954Z	    
+2025-04-28T13:13:53.954Z	  
+2025-04-28T13:13:53.954Z	  
+2025-04-28T13:13:53.955Z	  ✘ [ERROR] Could not resolve "crypto"
+2025-04-28T13:13:53.955Z	  
+2025-04-28T13:13:53.955Z	      node_modules/pg/lib/crypto/utils-legacy.js:5:27:
+2025-04-28T13:13:53.955Z	        5 │ const nodeCrypto = require('crypto')
+2025-04-28T13:13:53.955Z	          ╵                            ~~~~~~~~
+2025-04-28T13:13:53.955Z	  
+2025-04-28T13:13:53.955Z	    The package "crypto" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.955Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.955Z	    
+2025-04-28T13:13:53.955Z	  
+2025-04-28T13:13:53.955Z	  
+2025-04-28T13:13:53.955Z	  ✘ [ERROR] Could not resolve "crypto"
+2025-04-28T13:13:53.955Z	  
+2025-04-28T13:13:53.955Z	      node_modules/pg/lib/crypto/utils-webcrypto.js:1:27:
+2025-04-28T13:13:53.955Z	        1 │ const nodeCrypto = require('crypto')
+2025-04-28T13:13:53.955Z	          ╵                            ~~~~~~~~
+2025-04-28T13:13:53.956Z	  
+2025-04-28T13:13:53.956Z	    The package "crypto" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.956Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.956Z	    
+2025-04-28T13:13:53.956Z	  
+2025-04-28T13:13:53.956Z	  
+2025-04-28T13:13:53.956Z	  ✘ [ERROR] Could not resolve "events"
+2025-04-28T13:13:53.956Z	  
+2025-04-28T13:13:53.956Z	      node_modules/pg/lib/native/client.js:12:27:
+2025-04-28T13:13:53.956Z	        12 │ var EventEmitter = require('events').EventEmitter
+2025-04-28T13:13:53.956Z	           ╵                            ~~~~~~~~
+2025-04-28T13:13:53.956Z	  
+2025-04-28T13:13:53.956Z	    The package "events" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.957Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.957Z	    
+2025-04-28T13:13:53.957Z	  
+2025-04-28T13:13:53.957Z	  
+2025-04-28T13:13:53.957Z	  ✘ [ERROR] Could not resolve "util"
+2025-04-28T13:13:53.957Z	  
+2025-04-28T13:13:53.957Z	      node_modules/pg/lib/native/client.js:13:19:
+2025-04-28T13:13:53.957Z	        13 │ var util = require('util')
+2025-04-28T13:13:53.957Z	           ╵                    ~~~~~~
+2025-04-28T13:13:53.957Z	  
+2025-04-28T13:13:53.958Z	    The package "util" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.958Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.958Z	    
+2025-04-28T13:13:53.958Z	  
+2025-04-28T13:13:53.958Z	  
+2025-04-28T13:13:53.958Z	  ✘ [ERROR] Could not resolve "events"
+2025-04-28T13:13:53.958Z	  
+2025-04-28T13:13:53.959Z	      node_modules/pg/lib/native/query.js:3:27:
+2025-04-28T13:13:53.959Z	        3 │ var EventEmitter = require('events').EventEmitter
+2025-04-28T13:13:53.959Z	          ╵                            ~~~~~~~~
+2025-04-28T13:13:53.959Z	  
+2025-04-28T13:13:53.959Z	    The package "events" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.959Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.959Z	    
+2025-04-28T13:13:53.959Z	  
+2025-04-28T13:13:53.959Z	  
+2025-04-28T13:13:53.959Z	  ✘ [ERROR] Could not resolve "util"
+2025-04-28T13:13:53.959Z	  
+2025-04-28T13:13:53.959Z	      node_modules/pg/lib/native/query.js:4:19:
+2025-04-28T13:13:53.959Z	        4 │ var util = require('util')
+2025-04-28T13:13:53.959Z	          ╵                    ~~~~~~
+2025-04-28T13:13:53.959Z	  
+2025-04-28T13:13:53.959Z	    The package "util" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.960Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.960Z	    
+2025-04-28T13:13:53.960Z	  
+2025-04-28T13:13:53.960Z	  
+2025-04-28T13:13:53.960Z	  ✘ [ERROR] Could not resolve "events"
+2025-04-28T13:13:53.960Z	  
+2025-04-28T13:13:53.960Z	      node_modules/pg/lib/query.js:3:33:
+2025-04-28T13:13:53.960Z	        3 │ const { EventEmitter } = require('events')
+2025-04-28T13:13:53.960Z	          ╵                                  ~~~~~~~~
+2025-04-28T13:13:53.960Z	  
+2025-04-28T13:13:53.960Z	    The package "events" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.961Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.961Z	    
+2025-04-28T13:13:53.966Z	  
+2025-04-28T13:13:53.966Z	  
+2025-04-28T13:13:53.966Z	  ✘ [ERROR] Could not resolve "net"
+2025-04-28T13:13:53.966Z	  
+2025-04-28T13:13:53.966Z	      node_modules/pg/lib/stream.js:22:24:
+2025-04-28T13:13:53.966Z	        22 │     const net = require('net')
+2025-04-28T13:13:53.966Z	           ╵                         ~~~~~
+2025-04-28T13:13:53.966Z	  
+2025-04-28T13:13:53.967Z	    The package "net" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.967Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.967Z	    
+2025-04-28T13:13:53.967Z	  
+2025-04-28T13:13:53.967Z	  
+2025-04-28T13:13:53.967Z	  ✘ [ERROR] Could not resolve "tls"
+2025-04-28T13:13:53.967Z	  
+2025-04-28T13:13:53.969Z	      node_modules/pg/lib/stream.js:27:22:
+2025-04-28T13:13:53.969Z	        27 │     var tls = require('tls')
+2025-04-28T13:13:53.969Z	           ╵                       ~~~~~
+2025-04-28T13:13:53.969Z	  
+2025-04-28T13:13:53.969Z	    The package "tls" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.969Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.970Z	    
+2025-04-28T13:13:53.970Z	  
+2025-04-28T13:13:53.970Z	  
+2025-04-28T13:13:53.970Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.970Z	  
+2025-04-28T13:13:53.970Z	      node_modules/pgpass/lib/helper.js:3:19:
+2025-04-28T13:13:53.970Z	        3 │ var path = require('path')
+2025-04-28T13:13:53.970Z	          ╵                    ~~~~~~
+2025-04-28T13:13:53.970Z	  
+2025-04-28T13:13:53.970Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.970Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.970Z	    
+2025-04-28T13:13:53.970Z	  
+2025-04-28T13:13:53.970Z	  
+2025-04-28T13:13:53.970Z	  ✘ [ERROR] Could not resolve "stream"
+2025-04-28T13:13:53.971Z	  
+2025-04-28T13:13:53.971Z	      node_modules/pgpass/lib/helper.js:4:21:
+2025-04-28T13:13:53.971Z	        4 │   , Stream = require('stream').Stream
+2025-04-28T13:13:53.974Z	          ╵                      ~~~~~~~~
+2025-04-28T13:13:53.974Z	  
+2025-04-28T13:13:53.974Z	    The package "stream" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.974Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.975Z	    
+2025-04-28T13:13:53.975Z	  
+2025-04-28T13:13:53.975Z	  
+2025-04-28T13:13:53.975Z	  ✘ [ERROR] Could not resolve "util"
+2025-04-28T13:13:53.975Z	  
+2025-04-28T13:13:53.975Z	      node_modules/pgpass/lib/helper.js:6:19:
+2025-04-28T13:13:53.980Z	        6 │   , util = require('util')
+2025-04-28T13:13:53.980Z	          ╵                    ~~~~~~
+2025-04-28T13:13:53.980Z	  
+2025-04-28T13:13:53.980Z	    The package "util" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.980Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.980Z	    
+2025-04-28T13:13:53.980Z	  
+2025-04-28T13:13:53.980Z	  
+2025-04-28T13:13:53.980Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.980Z	  
+2025-04-28T13:13:53.980Z	      node_modules/pgpass/lib/index.js:3:19:
+2025-04-28T13:13:53.980Z	        3 │ var path = require('path')
+2025-04-28T13:13:53.980Z	          ╵                    ~~~~~~
+2025-04-28T13:13:53.980Z	  
+2025-04-28T13:13:53.980Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.980Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.981Z	    
+2025-04-28T13:13:53.981Z	  
+2025-04-28T13:13:53.981Z	  
+2025-04-28T13:13:53.981Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:53.981Z	  
+2025-04-28T13:13:53.981Z	      node_modules/pgpass/lib/index.js:4:17:
+2025-04-28T13:13:53.981Z	        4 │   , fs = require('fs')
+2025-04-28T13:13:53.981Z	          ╵                  ~~~~
+2025-04-28T13:13:53.981Z	  
+2025-04-28T13:13:53.981Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.981Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.981Z	    
+2025-04-28T13:13:53.981Z	  
+2025-04-28T13:13:53.981Z	  
+2025-04-28T13:13:53.981Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:53.981Z	  
+2025-04-28T13:13:53.981Z	      node_modules/png-js/png-node.js:21:19:
+2025-04-28T13:13:53.981Z	        21 │ const fs = require('fs');
+2025-04-28T13:13:53.981Z	           ╵                    ~~~~
+2025-04-28T13:13:53.981Z	  
+2025-04-28T13:13:53.981Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.981Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.981Z	    
+2025-04-28T13:13:53.982Z	  
+2025-04-28T13:13:53.982Z	  
+2025-04-28T13:13:53.982Z	  ✘ [ERROR] Could not resolve "zlib"
+2025-04-28T13:13:53.982Z	  
+2025-04-28T13:13:53.982Z	      node_modules/png-js/png-node.js:22:21:
+2025-04-28T13:13:53.982Z	        22 │ const zlib = require('zlib');
+2025-04-28T13:13:53.982Z	           │                      ~~~~~~
+2025-04-28T13:13:53.982Z	           ╵                      "./zlib"
+2025-04-28T13:13:53.982Z	  
+2025-04-28T13:13:53.982Z	    The package "zlib" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.982Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.982Z	    
+2025-04-28T13:13:53.982Z	  
+2025-04-28T13:13:53.982Z	  
+2025-04-28T13:13:53.982Z	  ✘ [ERROR] Could not resolve "crypto"
+2025-04-28T13:13:53.982Z	  
+2025-04-28T13:13:53.982Z	      node_modules/random-bytes/index.js:14:21:
+2025-04-28T13:13:53.982Z	        14 │ var crypto = require('crypto')
+2025-04-28T13:13:53.982Z	           ╵                      ~~~~~~~~
+2025-04-28T13:13:53.982Z	  
+2025-04-28T13:13:53.982Z	    The package "crypto" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.983Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.983Z	    
+2025-04-28T13:13:53.983Z	  
+2025-04-28T13:13:53.986Z	  
+2025-04-28T13:13:53.986Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.986Z	  
+2025-04-28T13:13:53.986Z	      node_modules/rollup/dist/es/rollup.js:14:7:
+2025-04-28T13:13:53.986Z	        14 │ import 'path';
+2025-04-28T13:13:53.987Z	           ╵        ~~~~~~
+2025-04-28T13:13:53.987Z	  
+2025-04-28T13:13:53.987Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.987Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.987Z	    
+2025-04-28T13:13:53.987Z	  
+2025-04-28T13:13:53.987Z	  
+2025-04-28T13:13:53.989Z	  ✘ [ERROR] Could not resolve "tty"
+2025-04-28T13:13:53.989Z	  
+2025-04-28T13:13:53.989Z	      node_modules/rollup/dist/es/rollup.js:18:7:
+2025-04-28T13:13:53.989Z	        18 │ import 'tty';
+2025-04-28T13:13:53.989Z	           ╵        ~~~~~
+2025-04-28T13:13:53.989Z	  
+2025-04-28T13:13:53.989Z	    The package "tty" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.989Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.989Z	    
+2025-04-28T13:13:53.989Z	  
+2025-04-28T13:13:53.990Z	  
+2025-04-28T13:13:53.990Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.990Z	  
+2025-04-28T13:13:53.990Z	      node_modules/rollup/dist/es/shared/node-entry.js:12:50:
+2025-04-28T13:13:53.990Z	        12 │ import { posix, win32, isAbsolute, resolve } from 'path';
+2025-04-28T13:13:53.990Z	           ╵                                                   ~~~~~~
+2025-04-28T13:13:53.990Z	  
+2025-04-28T13:13:53.990Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.990Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.990Z	    
+2025-04-28T13:13:53.994Z	  
+2025-04-28T13:13:53.994Z	  
+2025-04-28T13:13:53.994Z	  ✘ [ERROR] Could not resolve "tty"
+2025-04-28T13:13:53.994Z	  
+2025-04-28T13:13:53.995Z	      node_modules/rollup/dist/es/shared/node-entry.js:17:21:
+2025-04-28T13:13:53.995Z	        17 │ import * as tty from 'tty';
+2025-04-28T13:13:53.995Z	           ╵                      ~~~~~
+2025-04-28T13:13:53.995Z	  
+2025-04-28T13:13:53.995Z	    The package "tty" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.995Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.995Z	    
+2025-04-28T13:13:53.995Z	  
+2025-04-28T13:13:53.995Z	  
+2025-04-28T13:13:53.995Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:53.995Z	  
+2025-04-28T13:13:53.995Z	      node_modules/rollup/dist/es/shared/watch.js:13:25:
+2025-04-28T13:13:53.995Z	        13 │ import require$$0$1 from 'path';
+2025-04-28T13:13:53.995Z	           ╵                          ~~~~~~
+2025-04-28T13:13:53.995Z	  
+2025-04-28T13:13:53.995Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.996Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.996Z	    
+2025-04-28T13:13:53.996Z	  
+2025-04-28T13:13:53.996Z	  
+2025-04-28T13:13:53.996Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:53.996Z	  
+2025-04-28T13:13:53.996Z	      node_modules/rollup/dist/es/shared/watch.js:14:25:
+2025-04-28T13:13:53.996Z	        14 │ import require$$0$2 from 'fs';
+2025-04-28T13:13:53.996Z	           ╵                          ~~~~
+2025-04-28T13:13:53.996Z	  
+2025-04-28T13:13:53.996Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.996Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.996Z	    
+2025-04-28T13:13:53.996Z	  
+2025-04-28T13:13:53.996Z	  
+2025-04-28T13:13:53.996Z	  ✘ [ERROR] Could not resolve "util"
+2025-04-28T13:13:53.996Z	  
+2025-04-28T13:13:53.996Z	      node_modules/rollup/dist/es/shared/watch.js:15:23:
+2025-04-28T13:13:53.996Z	        15 │ import require$$2 from 'util';
+2025-04-28T13:13:53.996Z	           ╵                        ~~~~~~
+2025-04-28T13:13:53.996Z	  
+2025-04-28T13:13:53.996Z	    The package "util" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.997Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.997Z	    
+2025-04-28T13:13:53.997Z	  
+2025-04-28T13:13:53.997Z	  
+2025-04-28T13:13:53.997Z	  ✘ [ERROR] Could not resolve "stream"
+2025-04-28T13:13:53.997Z	  
+2025-04-28T13:13:53.997Z	      node_modules/rollup/dist/es/shared/watch.js:16:23:
+2025-04-28T13:13:53.997Z	        16 │ import require$$1 from 'stream';
+2025-04-28T13:13:53.997Z	           ╵                        ~~~~~~~~
+2025-04-28T13:13:53.997Z	  
+2025-04-28T13:13:53.997Z	    The package "stream" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.997Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.997Z	    
+2025-04-28T13:13:53.997Z	  
+2025-04-28T13:13:53.997Z	  
+2025-04-28T13:13:53.997Z	  ✘ [ERROR] Could not resolve "os"
+2025-04-28T13:13:53.997Z	  
+2025-04-28T13:13:53.997Z	      node_modules/rollup/dist/es/shared/watch.js:17:25:
+2025-04-28T13:13:53.997Z	        17 │ import require$$2$1 from 'os';
+2025-04-28T13:13:53.997Z	           ╵                          ~~~~
+2025-04-28T13:13:53.997Z	  
+2025-04-28T13:13:53.998Z	    The package "os" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.998Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.998Z	    
+2025-04-28T13:13:53.998Z	  
+2025-04-28T13:13:53.998Z	  
+2025-04-28T13:13:53.998Z	  ✘ [ERROR] Could not resolve "events"
+2025-04-28T13:13:53.998Z	  
+2025-04-28T13:13:53.998Z	      node_modules/rollup/dist/es/shared/watch.js:18:25:
+2025-04-28T13:13:53.998Z	        18 │ import require$$0$3 from 'events';
+2025-04-28T13:13:53.998Z	           ╵                          ~~~~~~~~
+2025-04-28T13:13:53.998Z	  
+2025-04-28T13:13:53.998Z	    The package "events" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.998Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.998Z	    
+2025-04-28T13:13:53.998Z	  
+2025-04-28T13:13:53.998Z	  
+2025-04-28T13:13:53.998Z	  ✘ [ERROR] Could not resolve "tty"
+2025-04-28T13:13:53.999Z	  
+2025-04-28T13:13:53.999Z	      node_modules/rollup/dist/es/shared/watch.js:24:7:
+2025-04-28T13:13:53.999Z	        24 │ import 'tty';
+2025-04-28T13:13:53.999Z	           ╵        ~~~~~
+2025-04-28T13:13:53.999Z	  
+2025-04-28T13:13:53.999Z	    The package "tty" wasn't found on the file system but is built into node.
+2025-04-28T13:13:53.999Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:53.999Z	    
+2025-04-28T13:13:53.999Z	  
+2025-04-28T13:13:53.999Z	  
+2025-04-28T13:13:54.000Z	  ✘ [ERROR] Could not resolve "buffer"
+2025-04-28T13:13:54.000Z	  
+2025-04-28T13:13:54.000Z	      node_modules/safe-buffer/index.js:3:21:
+2025-04-28T13:13:54.000Z	        3 │ var buffer = require('buffer')
+2025-04-28T13:13:54.000Z	          ╵                      ~~~~~~~~
+2025-04-28T13:13:54.000Z	  
+2025-04-28T13:13:54.000Z	    The package "buffer" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.000Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.000Z	    
+2025-04-28T13:13:54.000Z	  
+2025-04-28T13:13:54.000Z	  
+2025-04-28T13:13:54.000Z	  ✘ [ERROR] Could not resolve "buffer"
+2025-04-28T13:13:54.000Z	  
+2025-04-28T13:13:54.000Z	      node_modules/safer-buffer/safer.js:5:21:
+2025-04-28T13:13:54.000Z	        5 │ var buffer = require('buffer')
+2025-04-28T13:13:54.000Z	          ╵                      ~~~~~~~~
+2025-04-28T13:13:54.000Z	  
+2025-04-28T13:13:54.000Z	    The package "buffer" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.000Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.000Z	    
+2025-04-28T13:13:54.000Z	  
+2025-04-28T13:13:54.000Z	  
+2025-04-28T13:13:54.001Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:54.001Z	  
+2025-04-28T13:13:54.001Z	      node_modules/send/index.js:23:17:
+2025-04-28T13:13:54.001Z	        23 │ var fs = require('fs')
+2025-04-28T13:13:54.001Z	           ╵                  ~~~~
+2025-04-28T13:13:54.001Z	  
+2025-04-28T13:13:54.001Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.001Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.002Z	    
+2025-04-28T13:13:54.002Z	  
+2025-04-28T13:13:54.002Z	  
+2025-04-28T13:13:54.002Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:54.002Z	  
+2025-04-28T13:13:54.002Z	      node_modules/send/index.js:28:19:
+2025-04-28T13:13:54.002Z	        28 │ var path = require('path')
+2025-04-28T13:13:54.002Z	           ╵                    ~~~~~~
+2025-04-28T13:13:54.002Z	  
+2025-04-28T13:13:54.002Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.004Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.005Z	    
+2025-04-28T13:13:54.005Z	  
+2025-04-28T13:13:54.005Z	  
+2025-04-28T13:13:54.005Z	  ✘ [ERROR] Could not resolve "stream"
+2025-04-28T13:13:54.005Z	  
+2025-04-28T13:13:54.005Z	      node_modules/send/index.js:30:21:
+2025-04-28T13:13:54.005Z	        30 │ var Stream = require('stream')
+2025-04-28T13:13:54.005Z	           ╵                      ~~~~~~~~
+2025-04-28T13:13:54.005Z	  
+2025-04-28T13:13:54.005Z	    The package "stream" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.005Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.005Z	    
+2025-04-28T13:13:54.005Z	  
+2025-04-28T13:13:54.005Z	  
+2025-04-28T13:13:54.005Z	  ✘ [ERROR] Could not resolve "util"
+2025-04-28T13:13:54.005Z	  
+2025-04-28T13:13:54.005Z	      node_modules/send/index.js:31:19:
+2025-04-28T13:13:54.005Z	        31 │ var util = require('util')
+2025-04-28T13:13:54.005Z	           ╵                    ~~~~~~
+2025-04-28T13:13:54.005Z	  
+2025-04-28T13:13:54.005Z	    The package "util" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.005Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.005Z	    
+2025-04-28T13:13:54.005Z	  
+2025-04-28T13:13:54.005Z	  
+2025-04-28T13:13:54.005Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:54.006Z	  
+2025-04-28T13:13:54.006Z	      node_modules/serve-static/index.js:19:22:
+2025-04-28T13:13:54.006Z	        19 │ var resolve = require('path').resolve
+2025-04-28T13:13:54.006Z	           ╵                       ~~~~~~
+2025-04-28T13:13:54.006Z	  
+2025-04-28T13:13:54.006Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.006Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.006Z	    
+2025-04-28T13:13:54.006Z	  
+2025-04-28T13:13:54.006Z	  
+2025-04-28T13:13:54.006Z	  ✘ [ERROR] Could not resolve "url"
+2025-04-28T13:13:54.006Z	  
+2025-04-28T13:13:54.006Z	      node_modules/serve-static/index.js:21:18:
+2025-04-28T13:13:54.006Z	        21 │ var url = require('url')
+2025-04-28T13:13:54.006Z	           ╵                   ~~~~~
+2025-04-28T13:13:54.006Z	  
+2025-04-28T13:13:54.006Z	    The package "url" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.006Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.006Z	    
+2025-04-28T13:13:54.006Z	  
+2025-04-28T13:13:54.007Z	  
+2025-04-28T13:13:54.007Z	  ✘ [ERROR] Could not resolve "stream"
+2025-04-28T13:13:54.007Z	  
+2025-04-28T13:13:54.007Z	      node_modules/split2/index.js:19:30:
+2025-04-28T13:13:54.007Z	        19 │ const { Transform } = require('stream')
+2025-04-28T13:13:54.007Z	           ╵                               ~~~~~~~~
+2025-04-28T13:13:54.007Z	  
+2025-04-28T13:13:54.007Z	    The package "stream" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.007Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.007Z	    
+2025-04-28T13:13:54.007Z	  
+2025-04-28T13:13:54.007Z	  
+2025-04-28T13:13:54.007Z	  ✘ [ERROR] Could not resolve "string_decoder"
+2025-04-28T13:13:54.007Z	  
+2025-04-28T13:13:54.011Z	      node_modules/split2/index.js:20:34:
+2025-04-28T13:13:54.011Z	        20 │ const { StringDecoder } = require('string_decoder')
+2025-04-28T13:13:54.011Z	           ╵                                   ~~~~~~~~~~~~~~~~
+2025-04-28T13:13:54.011Z	  
+2025-04-28T13:13:54.011Z	    The package "string_decoder" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.011Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.011Z	    
+2025-04-28T13:13:54.011Z	  
+2025-04-28T13:13:54.011Z	  
+2025-04-28T13:13:54.011Z	  ✘ [ERROR] Could not resolve "tty"
+2025-04-28T13:13:54.011Z	  
+2025-04-28T13:13:54.012Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:10:25:
+2025-04-28T13:13:54.012Z	        10 │ import require$$0$3 from 'tty';
+2025-04-28T13:13:54.012Z	           ╵                          ~~~~~
+2025-04-28T13:13:54.012Z	  
+2025-04-28T13:13:54.012Z	    The package "tty" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.012Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.012Z	    
+2025-04-28T13:13:54.012Z	  
+2025-04-28T13:13:54.012Z	  
+2025-04-28T13:13:54.012Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:54.012Z	  
+2025-04-28T13:13:54.012Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:11:212:
+2025-04-28T13:13:54.012Z	        11 │ ...n as join$1, sep as sep$1, normalize as normalize$1 } from 'path';
+2025-04-28T13:13:54.012Z	           ╵                                                               ~~~~~~
+2025-04-28T13:13:54.012Z	  
+2025-04-28T13:13:54.012Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.012Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.012Z	    
+2025-04-28T13:13:54.012Z	  
+2025-04-28T13:13:54.012Z	  
+2025-04-28T13:13:54.013Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:54.013Z	  
+2025-04-28T13:13:54.013Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:14:30:
+2025-04-28T13:13:54.013Z	        14 │ import * as require$$0$2 from 'fs';
+2025-04-28T13:13:54.013Z	           ╵                               ~~~~
+2025-04-28T13:13:54.013Z	  
+2025-04-28T13:13:54.013Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.013Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.013Z	    
+2025-04-28T13:13:54.013Z	  
+2025-04-28T13:13:54.013Z	  
+2025-04-28T13:13:54.013Z	  ✘ [ERROR] Could not resolve "util"
+2025-04-28T13:13:54.013Z	  
+2025-04-28T13:13:54.013Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:22:25:
+2025-04-28T13:13:54.013Z	        22 │ import require$$0$5 from 'util';
+2025-04-28T13:13:54.013Z	           ╵                          ~~~~~~
+2025-04-28T13:13:54.013Z	  
+2025-04-28T13:13:54.013Z	    The package "util" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.013Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.014Z	    
+2025-04-28T13:13:54.014Z	  
+2025-04-28T13:13:54.014Z	  
+2025-04-28T13:13:54.014Z	  ✘ [ERROR] Could not resolve "net"
+2025-04-28T13:13:54.014Z	  
+2025-04-28T13:13:54.014Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:23:25:
+2025-04-28T13:13:54.014Z	        23 │ import require$$4$1 from 'net';
+2025-04-28T13:13:54.014Z	           ╵                          ~~~~~
+2025-04-28T13:13:54.014Z	  
+2025-04-28T13:13:54.014Z	    The package "net" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.014Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.014Z	    
+2025-04-28T13:13:54.014Z	  
+2025-04-28T13:13:54.014Z	  
+2025-04-28T13:13:54.014Z	  ✘ [ERROR] Could not resolve "events"
+2025-04-28T13:13:54.014Z	  
+2025-04-28T13:13:54.014Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:24:25:
+2025-04-28T13:13:54.014Z	        24 │ import require$$0$7 from 'events';
+2025-04-28T13:13:54.014Z	           ╵                          ~~~~~~~~
+2025-04-28T13:13:54.014Z	  
+2025-04-28T13:13:54.015Z	    The package "events" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.015Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.015Z	    
+2025-04-28T13:13:54.015Z	  
+2025-04-28T13:13:54.015Z	  
+2025-04-28T13:13:54.015Z	  ✘ [ERROR] Could not resolve "url"
+2025-04-28T13:13:54.015Z	  
+2025-04-28T13:13:54.016Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:25:25:
+2025-04-28T13:13:54.016Z	        25 │ import require$$0$9 from 'url';
+2025-04-28T13:13:54.016Z	           ╵                          ~~~~~
+2025-04-28T13:13:54.016Z	  
+2025-04-28T13:13:54.016Z	    The package "url" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.016Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.016Z	    
+2025-04-28T13:13:54.016Z	  
+2025-04-28T13:13:54.016Z	  
+2025-04-28T13:13:54.016Z	  ✘ [ERROR] Could not resolve "http"
+2025-04-28T13:13:54.016Z	  
+2025-04-28T13:13:54.016Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:26:23:
+2025-04-28T13:13:54.016Z	        26 │ import require$$1 from 'http';
+2025-04-28T13:13:54.016Z	           ╵                        ~~~~~~
+2025-04-28T13:13:54.016Z	  
+2025-04-28T13:13:54.016Z	    The package "http" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.016Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.016Z	    
+2025-04-28T13:13:54.016Z	  
+2025-04-28T13:13:54.016Z	  
+2025-04-28T13:13:54.016Z	  ✘ [ERROR] Could not resolve "stream"
+2025-04-28T13:13:54.016Z	  
+2025-04-28T13:13:54.016Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:27:25:
+2025-04-28T13:13:54.016Z	        27 │ import require$$0$6 from 'stream';
+2025-04-28T13:13:54.016Z	           ╵                          ~~~~~~~~
+2025-04-28T13:13:54.016Z	  
+2025-04-28T13:13:54.017Z	    The package "stream" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.017Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.017Z	    
+2025-04-28T13:13:54.017Z	  
+2025-04-28T13:13:54.017Z	  
+2025-04-28T13:13:54.017Z	  ✘ [ERROR] Could not resolve "os"
+2025-04-28T13:13:54.017Z	  
+2025-04-28T13:13:54.017Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:28:23:
+2025-04-28T13:13:54.017Z	        28 │ import require$$2 from 'os';
+2025-04-28T13:13:54.018Z	           ╵                        ~~~~
+2025-04-28T13:13:54.018Z	  
+2025-04-28T13:13:54.018Z	    The package "os" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.018Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.018Z	    
+2025-04-28T13:13:54.018Z	  
+2025-04-28T13:13:54.018Z	  
+2025-04-28T13:13:54.018Z	  ✘ [ERROR] Could not resolve "child_process"
+2025-04-28T13:13:54.018Z	  
+2025-04-28T13:13:54.018Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:29:25:
+2025-04-28T13:13:54.019Z	        29 │ import require$$2$1 from 'child_process';
+2025-04-28T13:13:54.019Z	           ╵                          ~~~~~~~~~~~~~~~
+2025-04-28T13:13:54.019Z	  
+2025-04-28T13:13:54.019Z	    The package "child_process" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.019Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.019Z	    
+2025-04-28T13:13:54.019Z	  
+2025-04-28T13:13:54.019Z	  
+2025-04-28T13:13:54.019Z	  ✘ [ERROR] Could not resolve "crypto"
+2025-04-28T13:13:54.019Z	  
+2025-04-28T13:13:54.019Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:32:25:
+2025-04-28T13:13:54.019Z	        32 │ import require$$3$1 from 'crypto';
+2025-04-28T13:13:54.020Z	           ╵                          ~~~~~~~~
+2025-04-28T13:13:54.020Z	  
+2025-04-28T13:13:54.020Z	    The package "crypto" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.020Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.020Z	    
+2025-04-28T13:13:54.020Z	  
+2025-04-28T13:13:54.020Z	  
+2025-04-28T13:13:54.020Z	  ✘ [ERROR] Could not resolve "module"
+2025-04-28T13:13:54.020Z	  
+2025-04-28T13:13:54.020Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:33:63:
+2025-04-28T13:13:54.020Z	        33 │ ... require$$0$8, { createRequire as createRequire$2 } from 'module';
+2025-04-28T13:13:54.020Z	           ╵                                                             ~~~~~~~~
+2025-04-28T13:13:54.020Z	  
+2025-04-28T13:13:54.021Z	    The package "module" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.021Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.021Z	    
+2025-04-28T13:13:54.021Z	  
+2025-04-28T13:13:54.021Z	  
+2025-04-28T13:13:54.021Z	  ✘ [ERROR] Could not resolve "querystring"
+2025-04-28T13:13:54.021Z	  
+2025-04-28T13:13:54.021Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:39:20:
+2025-04-28T13:13:54.021Z	        39 │ import * as qs from 'querystring';
+2025-04-28T13:13:54.021Z	           ╵                     ~~~~~~~~~~~~~
+2025-04-28T13:13:54.021Z	  
+2025-04-28T13:13:54.021Z	    The package "querystring" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.022Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.022Z	    
+2025-04-28T13:13:54.022Z	  
+2025-04-28T13:13:54.022Z	  
+2025-04-28T13:13:54.022Z	  ✘ [ERROR] Could not resolve "zlib"
+2025-04-28T13:13:54.022Z	  
+2025-04-28T13:13:54.022Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:41:19:
+2025-04-28T13:13:54.022Z	        41 │ import zlib$1 from 'zlib';
+2025-04-28T13:13:54.022Z	           ╵                    ~~~~~~
+2025-04-28T13:13:54.023Z	  
+2025-04-28T13:13:54.023Z	    The package "zlib" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.023Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.023Z	    
+2025-04-28T13:13:54.023Z	  
+2025-04-28T13:13:54.023Z	  
+2025-04-28T13:13:54.023Z	  ✘ [ERROR] Could not resolve "buffer"
+2025-04-28T13:13:54.023Z	  
+2025-04-28T13:13:54.024Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:42:25:
+2025-04-28T13:13:54.024Z	        42 │ import require$$0$a from 'buffer';
+2025-04-28T13:13:54.024Z	           ╵                          ~~~~~~~~
+2025-04-28T13:13:54.024Z	  
+2025-04-28T13:13:54.024Z	    The package "buffer" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.024Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.024Z	    
+2025-04-28T13:13:54.024Z	  
+2025-04-28T13:13:54.024Z	  
+2025-04-28T13:13:54.025Z	  ✘ [ERROR] Could not resolve "https"
+2025-04-28T13:13:54.025Z	  
+2025-04-28T13:13:54.025Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:43:25:
+2025-04-28T13:13:54.025Z	        43 │ import require$$1$1 from 'https';
+2025-04-28T13:13:54.025Z	           ╵                          ~~~~~~~
+2025-04-28T13:13:54.025Z	  
+2025-04-28T13:13:54.025Z	    The package "https" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.025Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.025Z	    
+2025-04-28T13:13:54.025Z	  
+2025-04-28T13:13:54.026Z	  
+2025-04-28T13:13:54.026Z	  ✘ [ERROR] Could not resolve "tls"
+2025-04-28T13:13:54.026Z	  
+2025-04-28T13:13:54.026Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:44:25:
+2025-04-28T13:13:54.026Z	        44 │ import require$$4$2 from 'tls';
+2025-04-28T13:13:54.026Z	           ╵                          ~~~~~
+2025-04-28T13:13:54.027Z	  
+2025-04-28T13:13:54.027Z	    The package "tls" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.027Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.027Z	    
+2025-04-28T13:13:54.027Z	  
+2025-04-28T13:13:54.027Z	  
+2025-04-28T13:13:54.027Z	  ✘ [ERROR] Could not resolve "assert"
+2025-04-28T13:13:54.027Z	  
+2025-04-28T13:13:54.027Z	      node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:46:25:
+2025-04-28T13:13:54.027Z	        46 │ import require$$4$3 from 'assert';
+2025-04-28T13:13:54.027Z	           ╵                          ~~~~~~~~
+2025-04-28T13:13:54.028Z	  
+2025-04-28T13:13:54.028Z	    The package "assert" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.028Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.028Z	    
+2025-04-28T13:13:54.028Z	  
+2025-04-28T13:13:54.028Z	  
+2025-04-28T13:13:54.029Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:54.029Z	  
+2025-04-28T13:13:54.029Z	      node_modules/vite/dist/node/chunks/dep-D0tGukau.js:2:23:
+2025-04-28T13:13:54.029Z	        2 │ import require$$0 from 'path';
+2025-04-28T13:13:54.029Z	          ╵                        ~~~~~~
+2025-04-28T13:13:54.029Z	  
+2025-04-28T13:13:54.029Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.030Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.030Z	    
+2025-04-28T13:13:54.030Z	  
+2025-04-28T13:13:54.030Z	  
+2025-04-28T13:13:54.030Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:54.030Z	  
+2025-04-28T13:13:54.030Z	      node_modules/vite/dist/node/chunks/dep-D0tGukau.js:3:32:
+2025-04-28T13:13:54.030Z	        3 │ import require$$0__default from 'fs';
+2025-04-28T13:13:54.030Z	          ╵                                 ~~~~
+2025-04-28T13:13:54.030Z	  
+2025-04-28T13:13:54.030Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.030Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.030Z	    
+2025-04-28T13:13:54.030Z	  
+2025-04-28T13:13:54.030Z	  
+2025-04-28T13:13:54.030Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:54.030Z	  
+2025-04-28T13:13:54.030Z	      node_modules/vite/dist/node/chunks/dep-DIiRB4RW.js:2:32:
+2025-04-28T13:13:54.030Z	        2 │ import require$$0__default from 'fs';
+2025-04-28T13:13:54.030Z	          ╵                                 ~~~~
+2025-04-28T13:13:54.030Z	  
+2025-04-28T13:13:54.030Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.030Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.031Z	    
+2025-04-28T13:13:54.031Z	  
+2025-04-28T13:13:54.031Z	  
+2025-04-28T13:13:54.031Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:54.031Z	  
+2025-04-28T13:13:54.031Z	      node_modules/vite/dist/node/chunks/dep-DIiRB4RW.js:4:25:
+2025-04-28T13:13:54.031Z	        4 │ import require$$0$1 from 'path';
+2025-04-28T13:13:54.031Z	          ╵                          ~~~~~~
+2025-04-28T13:13:54.031Z	  
+2025-04-28T13:13:54.031Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.031Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.031Z	    
+2025-04-28T13:13:54.031Z	  
+2025-04-28T13:13:54.032Z	  
+2025-04-28T13:13:54.032Z	  ✘ [ERROR] Could not resolve "crypto"
+2025-04-28T13:13:54.032Z	  
+2025-04-28T13:13:54.032Z	      node_modules/vite/dist/node/chunks/dep-DIiRB4RW.js:5:23:
+2025-04-28T13:13:54.032Z	        5 │ import require$$3 from 'crypto';
+2025-04-28T13:13:54.032Z	          ╵                        ~~~~~~~~
+2025-04-28T13:13:54.032Z	  
+2025-04-28T13:13:54.032Z	    The package "crypto" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.032Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.032Z	    
+2025-04-28T13:13:54.032Z	  
+2025-04-28T13:13:54.032Z	  
+2025-04-28T13:13:54.032Z	  ✘ [ERROR] Could not resolve "util"
+2025-04-28T13:13:54.032Z	  
+2025-04-28T13:13:54.032Z	      node_modules/vite/dist/node/chunks/dep-DIiRB4RW.js:6:25:
+2025-04-28T13:13:54.033Z	        6 │ import require$$0$2 from 'util';
+2025-04-28T13:13:54.033Z	          ╵                          ~~~~~~
+2025-04-28T13:13:54.033Z	  
+2025-04-28T13:13:54.033Z	    The package "util" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.033Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.033Z	    
+2025-04-28T13:13:54.033Z	  
+2025-04-28T13:13:54.033Z	  
+2025-04-28T13:13:54.033Z	  ✘ [ERROR] Could not resolve "tty"
+2025-04-28T13:13:54.033Z	  
+2025-04-28T13:13:54.033Z	      node_modules/vite/dist/node/index.js:15:7:
+2025-04-28T13:13:54.033Z	        15 │ import 'tty';
+2025-04-28T13:13:54.033Z	           ╵        ~~~~~
+2025-04-28T13:13:54.033Z	  
+2025-04-28T13:13:54.033Z	    The package "tty" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.033Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.033Z	    
+2025-04-28T13:13:54.034Z	  
+2025-04-28T13:13:54.034Z	  
+2025-04-28T13:13:54.034Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:54.034Z	  
+2025-04-28T13:13:54.034Z	      node_modules/vite/dist/node/index.js:16:7:
+2025-04-28T13:13:54.034Z	        16 │ import 'path';
+2025-04-28T13:13:54.034Z	           ╵        ~~~~~~
+2025-04-28T13:13:54.034Z	  
+2025-04-28T13:13:54.034Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.034Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.034Z	    
+2025-04-28T13:13:54.034Z	  
+2025-04-28T13:13:54.034Z	  
+2025-04-28T13:13:54.034Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:54.034Z	  
+2025-04-28T13:13:54.034Z	      node_modules/vite/dist/node/index.js:17:7:
+2025-04-28T13:13:54.034Z	        17 │ import 'fs';
+2025-04-28T13:13:54.034Z	           ╵        ~~~~
+2025-04-28T13:13:54.035Z	  
+2025-04-28T13:13:54.035Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.035Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.035Z	    
+2025-04-28T13:13:54.035Z	  
+2025-04-28T13:13:54.035Z	  
+2025-04-28T13:13:54.035Z	  ✘ [ERROR] Could not resolve "util"
+2025-04-28T13:13:54.035Z	  
+2025-04-28T13:13:54.035Z	      node_modules/vite/dist/node/index.js:24:7:
+2025-04-28T13:13:54.035Z	        24 │ import 'util';
+2025-04-28T13:13:54.036Z	           ╵        ~~~~~~
+2025-04-28T13:13:54.036Z	  
+2025-04-28T13:13:54.036Z	    The package "util" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.039Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.040Z	    
+2025-04-28T13:13:54.040Z	  
+2025-04-28T13:13:54.040Z	  
+2025-04-28T13:13:54.040Z	  ✘ [ERROR] Could not resolve "net"
+2025-04-28T13:13:54.040Z	  
+2025-04-28T13:13:54.040Z	      node_modules/vite/dist/node/index.js:25:7:
+2025-04-28T13:13:54.040Z	        25 │ import 'net';
+2025-04-28T13:13:54.040Z	           ╵        ~~~~~
+2025-04-28T13:13:54.040Z	  
+2025-04-28T13:13:54.040Z	    The package "net" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.040Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.040Z	    
+2025-04-28T13:13:54.040Z	  
+2025-04-28T13:13:54.041Z	  
+2025-04-28T13:13:54.041Z	  ✘ [ERROR] Could not resolve "events"
+2025-04-28T13:13:54.041Z	  
+2025-04-28T13:13:54.041Z	      node_modules/vite/dist/node/index.js:26:7:
+2025-04-28T13:13:54.043Z	        26 │ import 'events';
+2025-04-28T13:13:54.044Z	           ╵        ~~~~~~~~
+2025-04-28T13:13:54.044Z	  
+2025-04-28T13:13:54.044Z	    The package "events" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.044Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.044Z	    
+2025-04-28T13:13:54.044Z	  
+2025-04-28T13:13:54.044Z	  
+2025-04-28T13:13:54.044Z	  ✘ [ERROR] Could not resolve "url"
+2025-04-28T13:13:54.044Z	  
+2025-04-28T13:13:54.044Z	      node_modules/vite/dist/node/index.js:27:7:
+2025-04-28T13:13:54.044Z	        27 │ import 'url';
+2025-04-28T13:13:54.044Z	           ╵        ~~~~~
+2025-04-28T13:13:54.045Z	  
+2025-04-28T13:13:54.045Z	    The package "url" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.045Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.045Z	    
+2025-04-28T13:13:54.045Z	  
+2025-04-28T13:13:54.045Z	  
+2025-04-28T13:13:54.045Z	  ✘ [ERROR] Could not resolve "http"
+2025-04-28T13:13:54.047Z	  
+2025-04-28T13:13:54.047Z	      node_modules/vite/dist/node/index.js:28:7:
+2025-04-28T13:13:54.047Z	        28 │ import 'http';
+2025-04-28T13:13:54.047Z	           ╵        ~~~~~~
+2025-04-28T13:13:54.047Z	  
+2025-04-28T13:13:54.047Z	    The package "http" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.047Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.048Z	    
+2025-04-28T13:13:54.048Z	  
+2025-04-28T13:13:54.048Z	  
+2025-04-28T13:13:54.048Z	  ✘ [ERROR] Could not resolve "stream"
+2025-04-28T13:13:54.048Z	  
+2025-04-28T13:13:54.048Z	      node_modules/vite/dist/node/index.js:29:7:
+2025-04-28T13:13:54.048Z	        29 │ import 'stream';
+2025-04-28T13:13:54.048Z	           ╵        ~~~~~~~~
+2025-04-28T13:13:54.048Z	  
+2025-04-28T13:13:54.048Z	    The package "stream" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.048Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.048Z	    
+2025-04-28T13:13:54.048Z	  
+2025-04-28T13:13:54.048Z	  
+2025-04-28T13:13:54.048Z	  ✘ [ERROR] Could not resolve "os"
+2025-04-28T13:13:54.048Z	  
+2025-04-28T13:13:54.051Z	      node_modules/vite/dist/node/index.js:30:7:
+2025-04-28T13:13:54.052Z	        30 │ import 'os';
+2025-04-28T13:13:54.052Z	           ╵        ~~~~
+2025-04-28T13:13:54.052Z	  
+2025-04-28T13:13:54.052Z	    The package "os" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.052Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.052Z	    
+2025-04-28T13:13:54.052Z	  
+2025-04-28T13:13:54.052Z	  
+2025-04-28T13:13:54.052Z	  ✘ [ERROR] Could not resolve "child_process"
+2025-04-28T13:13:54.052Z	  
+2025-04-28T13:13:54.052Z	      node_modules/vite/dist/node/index.js:31:7:
+2025-04-28T13:13:54.052Z	        31 │ import 'child_process';
+2025-04-28T13:13:54.052Z	           ╵        ~~~~~~~~~~~~~~~
+2025-04-28T13:13:54.052Z	  
+2025-04-28T13:13:54.052Z	    The package "child_process" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.052Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.052Z	    
+2025-04-28T13:13:54.052Z	  
+2025-04-28T13:13:54.052Z	  
+2025-04-28T13:13:54.052Z	  ✘ [ERROR] Could not resolve "crypto"
+2025-04-28T13:13:54.052Z	  
+2025-04-28T13:13:54.052Z	      node_modules/vite/dist/node/index.js:34:7:
+2025-04-28T13:13:54.052Z	        34 │ import 'crypto';
+2025-04-28T13:13:54.052Z	           ╵        ~~~~~~~~
+2025-04-28T13:13:54.052Z	  
+2025-04-28T13:13:54.052Z	    The package "crypto" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.053Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.053Z	    
+2025-04-28T13:13:54.053Z	  
+2025-04-28T13:13:54.053Z	  
+2025-04-28T13:13:54.053Z	  ✘ [ERROR] Could not resolve "module"
+2025-04-28T13:13:54.053Z	  
+2025-04-28T13:13:54.053Z	      node_modules/vite/dist/node/index.js:35:7:
+2025-04-28T13:13:54.053Z	        35 │ import 'module';
+2025-04-28T13:13:54.053Z	           ╵        ~~~~~~~~
+2025-04-28T13:13:54.053Z	  
+2025-04-28T13:13:54.053Z	    The package "module" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.053Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.053Z	    
+2025-04-28T13:13:54.053Z	  
+2025-04-28T13:13:54.053Z	  
+2025-04-28T13:13:54.053Z	  ✘ [ERROR] Could not resolve "querystring"
+2025-04-28T13:13:54.053Z	  
+2025-04-28T13:13:54.053Z	      node_modules/vite/dist/node/index.js:40:7:
+2025-04-28T13:13:54.053Z	        40 │ import 'querystring';
+2025-04-28T13:13:54.053Z	           ╵        ~~~~~~~~~~~~~
+2025-04-28T13:13:54.053Z	  
+2025-04-28T13:13:54.053Z	    The package "querystring" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.053Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.053Z	    
+2025-04-28T13:13:54.053Z	  
+2025-04-28T13:13:54.053Z	  
+2025-04-28T13:13:54.053Z	  ✘ [ERROR] Could not resolve "zlib"
+2025-04-28T13:13:54.053Z	  
+2025-04-28T13:13:54.053Z	      node_modules/vite/dist/node/index.js:42:7:
+2025-04-28T13:13:54.054Z	        42 │ import 'zlib';
+2025-04-28T13:13:54.054Z	           ╵        ~~~~~~
+2025-04-28T13:13:54.054Z	  
+2025-04-28T13:13:54.054Z	    The package "zlib" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.054Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.054Z	    
+2025-04-28T13:13:54.054Z	  
+2025-04-28T13:13:54.054Z	  
+2025-04-28T13:13:54.054Z	  ✘ [ERROR] Could not resolve "buffer"
+2025-04-28T13:13:54.054Z	  
+2025-04-28T13:13:54.054Z	      node_modules/vite/dist/node/index.js:43:7:
+2025-04-28T13:13:54.054Z	        43 │ import 'buffer';
+2025-04-28T13:13:54.054Z	           ╵        ~~~~~~~~
+2025-04-28T13:13:54.054Z	  
+2025-04-28T13:13:54.054Z	    The package "buffer" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.054Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.054Z	    
+2025-04-28T13:13:54.054Z	  
+2025-04-28T13:13:54.054Z	  
+2025-04-28T13:13:54.054Z	  ✘ [ERROR] Could not resolve "https"
+2025-04-28T13:13:54.054Z	  
+2025-04-28T13:13:54.054Z	      node_modules/vite/dist/node/index.js:44:7:
+2025-04-28T13:13:54.054Z	        44 │ import 'https';
+2025-04-28T13:13:54.054Z	           ╵        ~~~~~~~
+2025-04-28T13:13:54.054Z	  
+2025-04-28T13:13:54.054Z	    The package "https" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.054Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.055Z	    
+2025-04-28T13:13:54.055Z	  
+2025-04-28T13:13:54.055Z	  
+2025-04-28T13:13:54.055Z	  ✘ [ERROR] Could not resolve "tls"
+2025-04-28T13:13:54.055Z	  
+2025-04-28T13:13:54.055Z	      node_modules/vite/dist/node/index.js:45:7:
+2025-04-28T13:13:54.055Z	        45 │ import 'tls';
+2025-04-28T13:13:54.055Z	           ╵        ~~~~~
+2025-04-28T13:13:54.055Z	  
+2025-04-28T13:13:54.055Z	    The package "tls" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.055Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.055Z	    
+2025-04-28T13:13:54.059Z	  
+2025-04-28T13:13:54.060Z	  
+2025-04-28T13:13:54.060Z	  ✘ [ERROR] Could not resolve "assert"
+2025-04-28T13:13:54.060Z	  
+2025-04-28T13:13:54.060Z	      node_modules/vite/dist/node/index.js:47:7:
+2025-04-28T13:13:54.060Z	        47 │ import 'assert';
+2025-04-28T13:13:54.060Z	           ╵        ~~~~~~~~
+2025-04-28T13:13:54.060Z	  
+2025-04-28T13:13:54.060Z	    The package "assert" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.060Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.060Z	    
+2025-04-28T13:13:54.060Z	  
+2025-04-28T13:13:54.060Z	  
+2025-04-28T13:13:54.060Z	  ✘ [ERROR] Could not resolve "fs"
+2025-04-28T13:13:54.060Z	  
+2025-04-28T13:13:54.060Z	      node_modules/vite/node_modules/esbuild/lib/main.js:1596:17:
+2025-04-28T13:13:54.060Z	        1596 │ var fs = require("fs");
+2025-04-28T13:13:54.060Z	             ╵                  ~~~~
+2025-04-28T13:13:54.061Z	  
+2025-04-28T13:13:54.061Z	    The package "fs" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.061Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.061Z	    
+2025-04-28T13:13:54.061Z	  
+2025-04-28T13:13:54.061Z	  
+2025-04-28T13:13:54.061Z	  ✘ [ERROR] Could not resolve "os"
+2025-04-28T13:13:54.061Z	  
+2025-04-28T13:13:54.062Z	      node_modules/vite/node_modules/esbuild/lib/main.js:1597:17:
+2025-04-28T13:13:54.062Z	        1597 │ var os = require("os");
+2025-04-28T13:13:54.062Z	             ╵                  ~~~~
+2025-04-28T13:13:54.062Z	  
+2025-04-28T13:13:54.062Z	    The package "os" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.062Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.062Z	    
+2025-04-28T13:13:54.062Z	  
+2025-04-28T13:13:54.062Z	  
+2025-04-28T13:13:54.062Z	  ✘ [ERROR] Could not resolve "path"
+2025-04-28T13:13:54.062Z	  
+2025-04-28T13:13:54.062Z	      node_modules/vite/node_modules/esbuild/lib/main.js:1598:19:
+2025-04-28T13:13:54.062Z	        1598 │ var path = require("path");
+2025-04-28T13:13:54.063Z	             ╵                    ~~~~~~
+2025-04-28T13:13:54.063Z	  
+2025-04-28T13:13:54.063Z	    The package "path" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.063Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.063Z	    
+2025-04-28T13:13:54.063Z	  
+2025-04-28T13:13:54.063Z	  
+2025-04-28T13:13:54.063Z	  ✘ [ERROR] Could not resolve "child_process"
+2025-04-28T13:13:54.063Z	  
+2025-04-28T13:13:54.063Z	      node_modules/vite/node_modules/esbuild/lib/main.js:1784:28:
+2025-04-28T13:13:54.063Z	        1784 │ var child_process = require("child_process");
+2025-04-28T13:13:54.063Z	             ╵                             ~~~~~~~~~~~~~~~
+2025-04-28T13:13:54.063Z	  
+2025-04-28T13:13:54.063Z	    The package "child_process" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.063Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.063Z	    
+2025-04-28T13:13:54.063Z	  
+2025-04-28T13:13:54.063Z	  
+2025-04-28T13:13:54.063Z	  ✘ [ERROR] Could not resolve "crypto"
+2025-04-28T13:13:54.063Z	  
+2025-04-28T13:13:54.063Z	      node_modules/vite/node_modules/esbuild/lib/main.js:1785:21:
+2025-04-28T13:13:54.063Z	        1785 │ var crypto = require("crypto");
+2025-04-28T13:13:54.063Z	             ╵                      ~~~~~~~~
+2025-04-28T13:13:54.064Z	  
+2025-04-28T13:13:54.064Z	    The package "crypto" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.064Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.064Z	    
+2025-04-28T13:13:54.064Z	  
+2025-04-28T13:13:54.064Z	  
+2025-04-28T13:13:54.064Z	  ✘ [ERROR] Could not resolve "tty"
+2025-04-28T13:13:54.064Z	  
+2025-04-28T13:13:54.064Z	      node_modules/vite/node_modules/esbuild/lib/main.js:1789:18:
+2025-04-28T13:13:54.064Z	        1789 │ var tty = require("tty");
+2025-04-28T13:13:54.064Z	             ╵                   ~~~~~
+2025-04-28T13:13:54.064Z	  
+2025-04-28T13:13:54.064Z	    The package "tty" wasn't found on the file system but is built into node.
+2025-04-28T13:13:54.064Z	    - Add the "nodejs_compat" compatibility flag to your project.
+2025-04-28T13:13:54.064Z	    
+2025-04-28T13:13:54.064Z	  
+2025-04-28T13:13:54.064Z	  
+2025-04-28T13:13:54.064Z	  ✘ [ERROR] Unexpected external import of "node:assert", "node:buffer", "node:child_process", "node:crypto", "node:dns", "node:events", "node:fs", "node:fs/promises", "node:http", "node:http2", "node:https", "node:module", "node:net", "node:os", "node:path", "node:perf_hooks", "node:process", "node:readline", "node:stream", "node:string_decoder", "node:url", "node:util", "node:v8", "node:worker_threads", and "node:zlib".
+2025-04-28T13:13:54.064Z	  Your worker has no default export, which means it is assumed to be a Service Worker format Worker.
+2025-04-28T13:13:54.064Z	  Did you mean to create a ES Module format Worker?
+2025-04-28T13:13:54.064Z	  If so, try adding `export default { ... }` in your entry-point.
+2025-04-28T13:13:54.064Z	  See https://developers.cloudflare.com/workers/reference/migrate-to-module-workers/. [plugin nodejs_compat-imports]
+2025-04-28T13:13:54.064Z	  
+2025-04-28T13:13:54.064Z	  
+2025-04-28T13:13:54.064Z	  ✘ [ERROR] Unexpected external import of "cloudflare:sockets".
+2025-04-28T13:13:54.064Z	  Your worker has no default export, which means it is assumed to be a Service Worker format Worker.
+2025-04-28T13:13:54.064Z	  Did you mean to create a ES Module format Worker?
+2025-04-28T13:13:54.065Z	  If so, try adding `export default { ... }` in your entry-point.
+2025-04-28T13:13:54.065Z	  See https://developers.cloudflare.com/workers/reference/migrate-to-module-workers/. [plugin cloudflare-internal-imports]
+2025-04-28T13:13:54.065Z	  
+2025-04-28T13:13:54.065Z	  
+2025-04-28T13:13:54.065Z	
+2025-04-28T13:13:54.065Z	
+2025-04-28T13:13:54.065Z	▲ [WARNING] "import.meta" is not available with the "iife" output format and will be empty [empty-import-meta]
+2025-04-28T13:13:54.065Z	
+2025-04-28T13:13:54.065Z	    dist/index.js:446:32:
+2025-04-28T13:13:54.065Z	      446 │   const goServerDir = path.join(import.meta.dirname, "go");
+2025-04-28T13:13:54.065Z	          ╵                                 ~~~~~~~~~~~
+2025-04-28T13:13:54.065Z	
+2025-04-28T13:13:54.065Z	  You need to set the output format to "esm" for "import.meta" to work correctly.
+2025-04-28T13:13:54.065Z	
+2025-04-28T13:13:54.065Z	
+2025-04-28T13:13:54.065Z	▲ [WARNING] "import.meta" is not available with the "iife" output format and will be empty [empty-import-meta]
+2025-04-28T13:13:54.065Z	
+2025-04-28T13:13:54.065Z	    dist/index.js:814:25:
+2025-04-28T13:13:54.065Z	      814 │       "@": path2.resolve(import.meta.dirname, "client", "src"),
+2025-04-28T13:13:54.065Z	          ╵                          ~~~~~~~~~~~
+2025-04-28T13:13:54.065Z	
+2025-04-28T13:13:54.066Z	  You need to set the output format to "esm" for "import.meta" to work correctly.
+2025-04-28T13:13:54.066Z	
+2025-04-28T13:13:54.066Z	
+2025-04-28T13:13:54.066Z	▲ [WARNING] "import.meta" is not available with the "iife" output format and will be empty [empty-import-meta]
+2025-04-28T13:13:54.066Z	
+2025-04-28T13:13:54.066Z	    dist/index.js:815:31:
+2025-04-28T13:13:54.066Z	      815 │       "@shared": path2.resolve(import.meta.dirname, "shared"),
+2025-04-28T13:13:54.066Z	          ╵                                ~~~~~~~~~~~
+2025-04-28T13:13:54.066Z	
+2025-04-28T13:13:54.066Z	  You need to set the output format to "esm" for "import.meta" to work correctly.
+2025-04-28T13:13:54.066Z	
+2025-04-28T13:13:54.066Z	
+2025-04-28T13:13:54.066Z	▲ [WARNING] "import.meta" is not available with the "iife" output format and will be empty [empty-import-meta]
+2025-04-28T13:13:54.066Z	
+2025-04-28T13:13:54.066Z	    dist/index.js:816:31:
+2025-04-28T13:13:54.066Z	      816 │ ... "@assets": path2.resolve(import.meta.dirname, "attached_assets")
+2025-04-28T13:13:54.067Z	          ╵                              ~~~~~~~~~~~
+2025-04-28T13:13:54.067Z	
+2025-04-28T13:13:54.067Z	  You need to set the output format to "esm" for "import.meta" to work correctly.
+2025-04-28T13:13:54.067Z	
+2025-04-28T13:13:54.069Z	
+2025-04-28T13:13:54.069Z	▲ [WARNING] "import.meta" is not available with the "iife" output format and will be empty [empty-import-meta]
+2025-04-28T13:13:54.069Z	
+2025-04-28T13:13:54.069Z	    dist/index.js:819:22:
+2025-04-28T13:13:54.069Z	      819 │   root: path2.resolve(import.meta.dirname, "client"),
+2025-04-28T13:13:54.069Z	          ╵                       ~~~~~~~~~~~
+2025-04-28T13:13:54.069Z	
+2025-04-28T13:13:54.069Z	  You need to set the output format to "esm" for "import.meta" to work correctly.
+2025-04-28T13:13:54.069Z	
+2025-04-28T13:13:54.069Z	
+2025-04-28T13:13:54.070Z	▲ [WARNING] "import.meta" is not available with the "iife" output format and will be empty [empty-import-meta]
+2025-04-28T13:13:54.070Z	
+2025-04-28T13:13:54.070Z	    dist/index.js:821:26:
+2025-04-28T13:13:54.070Z	      821 │     outDir: path2.resolve(import.meta.dirname, "dist/public"),
+2025-04-28T13:13:54.070Z	          ╵                           ~~~~~~~~~~~
+2025-04-28T13:13:54.070Z	
+2025-04-28T13:13:54.070Z	  You need to set the output format to "esm" for "import.meta" to work correctly.
+2025-04-28T13:13:54.070Z	
+2025-04-28T13:13:54.070Z	
+2025-04-28T13:13:54.070Z	▲ [WARNING] "import.meta" is not available with the "iife" output format and will be empty [empty-import-meta]
+2025-04-28T13:13:54.070Z	
+2025-04-28T13:13:54.070Z	    dist/index.js:881:33:
+2025-04-28T13:13:54.070Z	      881 │   const distPath = path3.resolve(import.meta.dirname, "public");
+2025-04-28T13:13:54.071Z	          ╵                                  ~~~~~~~~~~~
+2025-04-28T13:13:54.071Z	
+2025-04-28T13:13:54.071Z	  You need to set the output format to "esm" for "import.meta" to work correctly.
+2025-04-28T13:13:54.071Z	
+2025-04-28T13:13:54.071Z	
+2025-04-28T13:13:54.071Z	▲ [WARNING] The glob pattern require("../lightningcss.*.node") did not match any files [empty-glob]
+2025-04-28T13:13:54.071Z	
+2025-04-28T13:13:54.071Z	    node_modules/lightningcss/node/index.js:22:29:
+2025-04-28T13:13:54.071Z	      22 │ ...dule.exports = require(`../lightningcss.${parts.join('-')}.node`);
+2025-04-28T13:13:54.071Z	         ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-04-28T13:13:54.071Z	
+2025-04-28T13:13:54.072Z	
+2025-04-28T13:13:54.072Z	🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2025-04-28_13-13-35_963.log"
+2025-04-28T13:13:54.078Z	
+2025-04-28T13:13:54.078Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2025-04-28T13:13:54.082Z	Failed: error occurred while running deploy command
