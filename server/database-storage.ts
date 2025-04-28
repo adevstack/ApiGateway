@@ -42,7 +42,7 @@ export class DatabaseStorage implements IStorage {
       .returning({ id: users.id });
     return !!deletedUser;
   }
-  
+
   // Routes
   async getRoutes(): Promise<Route[]> {
     return await db.select().from(routes);
@@ -114,12 +114,28 @@ export class DatabaseStorage implements IStorage {
 
   // Stats
   async getLatestStats(): Promise<Stats | undefined> {
-    const [latestStats] = await db
-      .select()
-      .from(stats)
-      .orderBy(desc(stats.timestamp))
-      .limit(1);
-    return latestStats || undefined;
+    const maxRetries = 3;
+    let retryCount = 0;
+
+    while (retryCount < maxRetries) {
+      try {
+        const stats = await db.query(sql`
+          SELECT *
+          FROM stats
+          ORDER BY timestamp DESC
+          LIMIT 1
+        `);
+        return stats.length > 0 ? stats[0] : null;
+      } catch (error) {
+        retryCount++;
+        if (retryCount === maxRetries) {
+          console.error('Max retries reached for database connection');
+          throw error;
+        }
+        // Exponential backoff
+        await new Promise(resolve => setTimeout(resolve, Math.pow(2, retryCount) * 100));
+      }
+    }
   }
 
   async createStats(statsData: InsertStats): Promise<Stats> {

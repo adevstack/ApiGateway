@@ -28,29 +28,41 @@ async function startGoServer() {
     return;
   }
 
-  // PDF Documentation endpoint
-  app.get('/api/download-docs', async (_req, res) => {
-    try {
-      const { generateProjectDocumentation } = await import('./pdf-generator');
-      await generateProjectDocumentation();
-      
-      const filePath = path.join(process.cwd(), 'project-documentation.pdf');
-      res.download(filePath, 'project-documentation.pdf', (err) => {
-        if (err) {
-          console.error('Error sending documentation:', err);
-        }
-        // Clean up the file after sending
-        fs.unlink(filePath, (unlinkErr) => {
-          if (unlinkErr) {
-            console.error('Error cleaning up documentation file:', unlinkErr);
-          }
-        });
-      });
-    } catch (error) {
-      console.error('Error generating documentation:', error);
-      res.status(500).json({ message: 'Failed to generate documentation' });
+  // Helper function to start Go server
+  async function startGoServer() {
+    if (goServerProcess) {
+      console.log("Go server already running");
+      return;
     }
-  });
+
+    const goServerDir = path.join(import.meta.dirname, "go");
+    const goGatewayDir = path.join(goServerDir, "cmd", "gateway");
+    const goServerPath = path.join(goGatewayDir, "main.go");
+    
+    // Check if Go file exists
+    if (!fs.existsSync(goServerPath)) {
+      console.error(`Go server file not found at ${goServerPath}`);
+      return;
+    }
+
+    console.log("Starting Go server...");
+    goServerProcess = exec(`cd ${goGatewayDir} && go run main.go`, (error, stdout, stderr) => {
+      if (error) {
+        console.error(`Go server error: ${error.message}`);
+        return;
+      }
+      if (stderr) {
+        console.error(`Go server stderr: ${stderr}`);
+        return;
+      }
+      console.log(`Go server stdout: ${stdout}`);
+    });
+
+    goServerProcess.on('exit', (code: number) => {
+      console.log(`Go server process exited with code ${code}`);
+      goServerProcess = null;
+    });
+  }
 
   console.log("Starting Go server...");
   goServerProcess = exec(`cd ${goGatewayDir} && go run main.go`, (error, stdout, stderr) => {
