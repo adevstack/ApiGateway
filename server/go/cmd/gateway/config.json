@@ -1,0 +1,64 @@
+{
+  "port": 8000,
+  "logLevel": "info",
+  "logFile": "",
+  "enableRateLimit": true,
+  "defaultRateLimit": 100,
+  "defaultTimeout": 30,
+  "routes": [
+    {
+      "id": 1,
+      "path": "/api/users",
+      "target": "http://user-service:8080",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "rateLimit": 100,
+      "timeout": 30,
+      "authRequired": true,
+      "active": true
+    },
+    {
+      "id": 2,
+      "path": "/api/products",
+      "target": "http://product-service:8080",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "rateLimit": 50,
+      "timeout": 30,
+      "authRequired": true,
+      "active": true
+    },
+    {
+      "id": 3,
+      "path": "/api/auth",
+      "target": "http://auth-service:8080",
+      "methods": [
+        "POST"
+      ],
+      "rateLimit": 20,
+      "timeout": 10,
+      "authRequired": false,
+      "active": true
+    },
+    {
+      "id": 4,
+      "path": "/public",
+      "target": "http://static-service:8080",
+      "methods": [
+        "GET"
+      ],
+      "rateLimit": 500,
+      "timeout": 5,
+      "authRequired": false,
+      "active": true
+    }
+  ]
+}
