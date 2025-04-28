@@ -119,12 +119,11 @@ export class DatabaseStorage implements IStorage {
 
     while (retryCount < maxRetries) {
       try {
-        const stats = await db.query(sql`
-          SELECT *
-          FROM stats
-          ORDER BY timestamp DESC
-          LIMIT 1
-        `);
+        const [stats] = await db
+          .select()
+          .from(stats)
+          .orderBy(desc(stats.timestamp))
+          .limit(1);
         return stats.length > 0 ? stats[0] : null;
       } catch (error) {
         retryCount++;
