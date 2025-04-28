@@ -1,7 +1,8 @@
 
-name = "api-gateway"  # Corrected: added the hyphen for the correct worker name
+name = "api-gateway"  # Correct worker name with hyphen
 
 compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]  # Enable Node.js compatibility
 
 main = "./dist/index.js"
 
@@ -12,5 +13,5 @@ command = "npm run build"
 NODE_ENV = "production"
 
 [env.production]
-name = "api-gateway-prod"  # Corrected production environment name with hyphen
+name = "api-gateway-prod" 
 route = "api-gateway.adevstack.workers.dev/*"
