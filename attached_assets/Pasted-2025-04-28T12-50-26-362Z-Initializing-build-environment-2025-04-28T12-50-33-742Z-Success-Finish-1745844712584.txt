@@ -1,0 +1,87 @@
+2025-04-28T12:50:26.362Z	Initializing build environment...
+2025-04-28T12:50:33.742Z	Success: Finished initializing build environment
+2025-04-28T12:50:33.901Z	Cloning repository...
+2025-04-28T12:50:34.849Z	Detected the following tools from environment: npm@10.8.3, nodejs@22.9.0
+2025-04-28T12:50:34.852Z	Installing project dependencies: npm clean-install --progress=false
+2025-04-28T12:50:42.078Z	npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+2025-04-28T12:50:42.102Z	npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+2025-04-28T12:50:49.421Z	
+2025-04-28T12:50:49.422Z	added 502 packages, and audited 503 packages in 14s
+2025-04-28T12:50:49.422Z	
+2025-04-28T12:50:49.422Z	65 packages are looking for funding
+2025-04-28T12:50:49.422Z	  run `npm fund` for details
+2025-04-28T12:50:49.456Z	
+2025-04-28T12:50:49.456Z	7 moderate severity vulnerabilities
+2025-04-28T12:50:49.457Z	
+2025-04-28T12:50:49.457Z	To address issues that do not require attention, run:
+2025-04-28T12:50:49.457Z	  npm audit fix
+2025-04-28T12:50:49.457Z	
+2025-04-28T12:50:49.457Z	To address all issues (including breaking changes), run:
+2025-04-28T12:50:49.462Z	  npm audit fix --force
+2025-04-28T12:50:49.462Z	
+2025-04-28T12:50:49.462Z	Run `npm audit` for details.
+2025-04-28T12:50:49.504Z	Executing user build command: npm run build
+2025-04-28T12:50:49.841Z	
+2025-04-28T12:50:49.841Z	> rest-express@1.0.0 build
+2025-04-28T12:50:49.841Z	> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+2025-04-28T12:50:49.842Z	
+2025-04-28T12:50:50.765Z	vite v5.4.14 building for production...
+2025-04-28T12:50:50.843Z	transforming...
+2025-04-28T12:51:02.048Z	✓ 2963 modules transformed.
+2025-04-28T12:51:03.194Z	rendering chunks...
+2025-04-28T12:51:03.228Z	computing gzip size...
+2025-04-28T12:51:03.273Z	../dist/public/index.html                     0.63 kB │ gzip:   0.38 kB
+2025-04-28T12:51:03.274Z	../dist/public/assets/index-BBTRBnAp.css     71.55 kB │ gzip:  12.18 kB
+2025-04-28T12:51:03.277Z	../dist/public/assets/index-C0h84N1g.js   1,036.49 kB │ gzip: 294.07 kB
+2025-04-28T12:51:03.277Z	✓ built in 12.47s
+2025-04-28T12:51:03.278Z	
+2025-04-28T12:51:03.278Z	(!) Some chunks are larger than 500 kB after minification. Consider:
+2025-04-28T12:51:03.278Z	- Using dynamic import() to code-split the application
+2025-04-28T12:51:03.278Z	- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+2025-04-28T12:51:03.278Z	- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+2025-04-28T12:51:03.366Z	
+2025-04-28T12:51:03.369Z	  dist/index.js  30.4kb
+2025-04-28T12:51:03.369Z	
+2025-04-28T12:51:03.370Z	⚡ Done in 10ms
+2025-04-28T12:51:03.381Z	Success: Build command completed
+2025-04-28T12:51:03.382Z	Executing user deploy command: npx wrangler deploy
+2025-04-28T12:51:04.753Z	npm warn exec The following package was not found and will be installed: wrangler@4.13.2
+2025-04-28T12:51:15.589Z	
+2025-04-28T12:51:15.589Z	 ⛅️ wrangler 4.13.2
+2025-04-28T12:51:15.589Z	-------------------
+2025-04-28T12:51:15.589Z	
+2025-04-28T12:51:15.596Z	Running custom build: npm run build
+2025-04-28T12:51:15.817Z	
+2025-04-28T12:51:15.818Z	> rest-express@1.0.0 build
+2025-04-28T12:51:15.818Z	> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+2025-04-28T12:51:15.818Z	
+2025-04-28T12:51:16.164Z	vite v5.4.14 building for production...
+2025-04-28T12:51:16.262Z	transforming...
+2025-04-28T12:51:27.776Z	✓ 2963 modules transformed.
+2025-04-28T12:51:28.823Z	rendering chunks...
+2025-04-28T12:51:28.849Z	computing gzip size...
+2025-04-28T12:51:28.884Z	../dist/public/index.html                     0.63 kB │ gzip:   0.38 kB
+2025-04-28T12:51:28.885Z	../dist/public/assets/index-BBTRBnAp.css     71.55 kB │ gzip:  12.18 kB
+2025-04-28T12:51:28.886Z	../dist/public/assets/index-C0h84N1g.js   1,036.49 kB │ gzip: 294.07 kB
+2025-04-28T12:51:28.886Z	✓ built in 12.67s
+2025-04-28T12:51:28.886Z	
+2025-04-28T12:51:28.887Z	(!) Some chunks are larger than 500 kB after minification. Consider:
+2025-04-28T12:51:28.887Z	- Using dynamic import() to code-split the application
+2025-04-28T12:51:28.887Z	- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+2025-04-28T12:51:28.887Z	- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+2025-04-28T12:51:28.980Z	
+2025-04-28T12:51:28.980Z	  dist/index.js  30.4kb
+2025-04-28T12:51:28.980Z	
+2025-04-28T12:51:28.981Z	⚡ Done in 11ms
+2025-04-28T12:51:29.005Z	
+2025-04-28T12:51:29.072Z	✘ [ERROR] Build failed with 1 error:
+2025-04-28T12:51:29.072Z	
+2025-04-28T12:51:29.072Z	  ✘ [ERROR] No loader is configured for ".go" files: server/go/cmd/gateway/main.go
+2025-04-28T12:51:29.073Z	  
+2025-04-28T12:51:29.073Z	  
+2025-04-28T12:51:29.073Z	
+2025-04-28T12:51:29.073Z	
+2025-04-28T12:51:29.074Z	
+2025-04-28T12:51:29.075Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2025-04-28T12:51:29.109Z	🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2025-04-28_12-51-15_048.log"
+2025-04-28T12:51:29.244Z	Failed: error occurred while running deploy command
