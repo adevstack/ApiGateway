@@ -1,7 +1,5 @@
-
 name = "api-gateway"
-
-compatibility_date = "2024-01-01"
+compatibility_date = "2024-04-28"
 compatibility_flags = ["nodejs_compat"]
 node_compat = true
 
@@ -15,7 +13,7 @@ command = "npm run build"
 NODE_ENV = "production"
 
 [env.production]
-name = "api-gateway-prod"
+vars = { NODE_ENV = "production" }
 route = "api-gateway.adevstack.workers.dev/*"
 
 [build.upload]
