@@ -1,0 +1,65 @@
+2025-04-28T13:51:55.771Z	Initializing build environment...
+2025-04-28T13:52:01.763Z	Success: Finished initializing build environment
+2025-04-28T13:52:02.010Z	Cloning repository...
+2025-04-28T13:52:03.370Z	Detected the following tools from environment: npm@10.8.3, nodejs@22.9.0
+2025-04-28T13:52:03.371Z	Installing project dependencies: npm clean-install --progress=false
+2025-04-28T13:52:06.947Z	npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+2025-04-28T13:52:10.969Z	npm warn deprecated glob@8.1.0: Glob versions prior to v9 are no longer supported
+2025-04-28T13:52:13.990Z	
+2025-04-28T13:52:13.990Z	added 621 packages, and audited 622 packages in 10s
+2025-04-28T13:52:13.990Z	
+2025-04-28T13:52:13.991Z	81 packages are looking for funding
+2025-04-28T13:52:13.991Z	  run `npm fund` for details
+2025-04-28T13:52:14.011Z	
+2025-04-28T13:52:14.011Z	2 moderate severity vulnerabilities
+2025-04-28T13:52:14.011Z	
+2025-04-28T13:52:14.011Z	To address all issues (including breaking changes), run:
+2025-04-28T13:52:14.011Z	  npm audit fix --force
+2025-04-28T13:52:14.011Z	
+2025-04-28T13:52:14.011Z	Run `npm audit` for details.
+2025-04-28T13:52:14.041Z	Executing user build command: npm run build
+2025-04-28T13:52:14.232Z	
+2025-04-28T13:52:14.232Z	> rest-express@1.0.0 build
+2025-04-28T13:52:14.232Z	> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+2025-04-28T13:52:14.232Z	
+2025-04-28T13:52:14.457Z	vite v6.3.3 building for production...
+2025-04-28T13:52:14.521Z	transforming...
+2025-04-28T13:52:21.212Z	✓ 2780 modules transformed.
+2025-04-28T13:52:22.002Z	rendering chunks...
+2025-04-28T13:52:22.022Z	computing gzip size...
+2025-04-28T13:52:22.227Z	../dist/public/index.html                     0.63 kB │ gzip:   0.38 kB
+2025-04-28T13:52:22.228Z	../dist/public/assets/index-BBTRBnAp.css     71.55 kB │ gzip:  12.18 kB
+2025-04-28T13:52:22.228Z	../dist/public/assets/index-C3jExry8.js   1,047.98 kB │ gzip: 297.86 kB
+2025-04-28T13:52:22.228Z	✓ built in 7.74s
+2025-04-28T13:52:22.229Z	
+2025-04-28T13:52:22.229Z	(!) Some chunks are larger than 500 kB after minification. Consider:
+2025-04-28T13:52:22.229Z	- Using dynamic import() to code-split the application
+2025-04-28T13:52:22.229Z	- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+2025-04-28T13:52:22.229Z	- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+2025-04-28T13:52:22.330Z	
+2025-04-28T13:52:22.331Z	  dist/index.js  31.3kb
+2025-04-28T13:52:22.331Z	
+2025-04-28T13:52:22.331Z	⚡ Done in 6ms
+2025-04-28T13:52:22.339Z	Success: Build command completed
+2025-04-28T13:52:22.340Z	Executing user deploy command: npx wrangler deploy
+2025-04-28T13:52:23.983Z	
+2025-04-28T13:52:23.984Z	 ⛅️ wrangler 4.13.2
+2025-04-28T13:52:23.984Z	-------------------
+2025-04-28T13:52:23.984Z	
+2025-04-28T13:52:24.034Z	▲ [WARNING] Processing wrangler.toml configuration:
+2025-04-28T13:52:24.034Z	
+2025-04-28T13:52:24.034Z	    - Unexpected fields found in build field: "upload","polyfills"
+2025-04-28T13:52:24.034Z	    - Unexpected fields found in top-level field: "format"
+2025-04-28T13:52:24.035Z	
+2025-04-28T13:52:24.035Z	
+2025-04-28T13:52:24.035Z	
+2025-04-28T13:52:24.035Z	✘ [ERROR] Processing wrangler.toml configuration:
+2025-04-28T13:52:24.035Z	
+2025-04-28T13:52:24.036Z	    - Removed: "node_compat":
+2025-04-28T13:52:24.036Z	      The "node_compat" field is no longer supported as of Wrangler v4. Instead, use the `nodejs_compat` compatibility flag. This includes the functionality from legacy `node_compat` polyfills and natively implemented Node.js APIs. See https://developers.cloudflare.com/workers/runtime-apis/nodejs for more information.
+2025-04-28T13:52:24.036Z	
+2025-04-28T13:52:24.036Z	
+2025-04-28T13:52:24.036Z	
+2025-04-28T13:52:24.036Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2025-04-28T13:52:24.054Z	🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2025-04-28_13-52-23_678.log"
+2025-04-28T13:52:24.149Z	Failed: error occurred while running deploy command
