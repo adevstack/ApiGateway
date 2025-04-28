@@ -7,11 +7,11 @@ compatibility_flags = ["nodejs_compat"]  # Enable Node.js compatibility
 main = "./dist/index.js"
 
 [build]
-command = "npm run build"
+command = "npm run build"  # Ensure this matches the build process
 
 [vars]
 NODE_ENV = "production"
 
 [env.production]
-name = "api-gateway-prod" 
+name = "api-gateway-prod"
 route = "api-gateway.adevstack.workers.dev/*"
