@@ -1,6 +1,6 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
-import { setupVite, serveStatic, log } from "./vite";
+import { setupVite } from "./vite";
 
 const app = express();
 app.use(express.json());
@@ -68,3 +68,11 @@ app.use((req, res, next) => {
     log(`serving on port ${port}`);
   });
 })();
+
+export default {
+  fetch: async (request: Request, env: any, ctx: any) => {
+    return new Response('API Gateway Worker', {
+      headers: { 'content-type': 'text/plain' },
+    });
+  }
+};
