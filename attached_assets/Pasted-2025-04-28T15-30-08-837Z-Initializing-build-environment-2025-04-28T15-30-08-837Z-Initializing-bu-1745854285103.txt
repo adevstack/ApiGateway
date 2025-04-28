@@ -1,0 +1,61 @@
+2025-04-28T15:30:08.837Z	Initializing build environment...
+2025-04-28T15:30:08.837Z	Initializing build environment...
+2025-04-28T15:30:16.324Z	Success: Finished initializing build environment
+2025-04-28T15:30:16.592Z	Cloning repository...
+2025-04-28T15:30:18.328Z	Detected the following tools from environment: npm@10.8.3, nodejs@22.9.0
+2025-04-28T15:30:18.330Z	Installing project dependencies: npm clean-install --progress=false
+2025-04-28T15:30:24.446Z	npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+2025-04-28T15:30:28.545Z	npm warn deprecated glob@8.1.0: Glob versions prior to v9 are no longer supported
+2025-04-28T15:30:35.416Z	
+2025-04-28T15:30:35.416Z	added 621 packages, and audited 622 packages in 17s
+2025-04-28T15:30:35.420Z	
+2025-04-28T15:30:35.421Z	81 packages are looking for funding
+2025-04-28T15:30:35.421Z	  run `npm fund` for details
+2025-04-28T15:30:35.440Z	
+2025-04-28T15:30:35.441Z	2 moderate severity vulnerabilities
+2025-04-28T15:30:35.441Z	
+2025-04-28T15:30:35.441Z	To address all issues (including breaking changes), run:
+2025-04-28T15:30:35.441Z	  npm audit fix --force
+2025-04-28T15:30:35.442Z	
+2025-04-28T15:30:35.442Z	Run `npm audit` for details.
+2025-04-28T15:30:35.481Z	Executing user build command: npm run build
+2025-04-28T15:30:35.836Z	
+2025-04-28T15:30:35.839Z	> rest-express@1.0.0 build
+2025-04-28T15:30:35.841Z	> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+2025-04-28T15:30:35.841Z	
+2025-04-28T15:30:36.317Z	vite v6.3.3 building for production...
+2025-04-28T15:30:36.434Z	transforming...
+2025-04-28T15:30:47.329Z	✓ 2780 modules transformed.
+2025-04-28T15:30:48.437Z	rendering chunks...
+2025-04-28T15:30:48.470Z	computing gzip size...
+2025-04-28T15:30:48.511Z	../dist/public/index.html                     0.63 kB │ gzip:   0.38 kB
+2025-04-28T15:30:48.512Z	../dist/public/assets/index-BBTRBnAp.css     71.55 kB │ gzip:  12.18 kB
+2025-04-28T15:30:48.512Z	../dist/public/assets/index-C3jExry8.js   1,047.98 kB │ gzip: 297.86 kB
+2025-04-28T15:30:48.513Z	
+2025-04-28T15:30:48.513Z	(!) Some chunks are larger than 500 kB after minification. Consider:
+2025-04-28T15:30:48.513Z	- Using dynamic import() to code-split the application
+2025-04-28T15:30:48.513Z	- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+2025-04-28T15:30:48.513Z	- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+2025-04-28T15:30:48.514Z	✓ built in 12.15s
+2025-04-28T15:30:48.664Z	
+2025-04-28T15:30:48.665Z	  dist/index.js  32.0kb
+2025-04-28T15:30:48.665Z	
+2025-04-28T15:30:48.666Z	⚡ Done in 12ms
+2025-04-28T15:30:48.680Z	Success: Build command completed
+2025-04-28T15:30:48.681Z	Executing user deploy command: npx wrangler deploy
+2025-04-28T15:30:50.383Z	
+2025-04-28T15:30:50.384Z	 ⛅️ wrangler 4.13.2
+2025-04-28T15:30:50.384Z	-------------------
+2025-04-28T15:30:50.384Z	
+2025-04-28T15:30:50.389Z	
+2025-04-28T15:30:50.460Z	✘ [ERROR] Invalid character, expected "="
+2025-04-28T15:30:50.460Z	
+2025-04-28T15:30:50.460Z	    /opt/buildhome/repo/wrangler.toml:14:19:
+2025-04-28T15:30:50.460Z	      14 │ CLOUDFLARE_API_TOKEN
+2025-04-28T15:30:50.460Z	         ╵                    ^
+2025-04-28T15:30:50.460Z	
+2025-04-28T15:30:50.460Z	  
+2025-04-28T15:30:50.460Z	  If you think this is a bug, please open an issue at: https://github.com/cloudflare/workers-sdk/issues/new/choose
+2025-04-28T15:30:50.460Z	
+2025-04-28T15:30:50.462Z	
+2025-04-28T15:30:50.503Z	Failed: error occurred while running deploy command
