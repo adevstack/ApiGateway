@@ -1,5 +1,6 @@
 
-name = "apigateway"
+name = "api-gateway"  # with a hyphen "-", matching Cloudflare project name
+
 compatibility_date = "2024-01-01"
 
 [build]
@@ -12,5 +13,9 @@ bucket = "./dist/public"
 NODE_ENV = "production"
 
 [env.production]
-name = "apigateway-prod"
-route = "apigateway.adevstack.workers.dev/*"
+name = "api-gateway-prod"
+route = "api-gateway.adevstack.workers.dev/*"
+
+[[env.production.routes]]
+pattern = "/api/*"
+script = "api-gateway-prod"
