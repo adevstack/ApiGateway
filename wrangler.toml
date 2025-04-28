@@ -9,8 +9,6 @@ command = "npm run build"
 
 [vars]
 NODE_ENV = "production"
-
-[vars]
 CLOUDFLARE_API_TOKEN = "r1bbKJqVH9OioYFkCYqjSLL2WRpvJJfAxHYUlhn5"
 
 [env.production]
