@@ -83,6 +83,12 @@ async function startGoServer() {
   });
 }
 
+export default {
+  fetch: async (request: Request, env: any, ctx: any) => {
+    return new Response('Hello from API Gateway!');
+  }
+};
+
 export async function registerRoutes(app: Express): Promise<Server> {
   // Initialize Express routes first
   app.get('/api/download-docs', async (_req, res) => {
