@@ -72,6 +72,31 @@ async function startGoServer() {
 }
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Initialize Express routes first
+  app.get('/api/download-docs', async (_req, res) => {
+    try {
+      const { generateProjectDocumentation } = await import('./pdf-generator');
+      await generateProjectDocumentation();
+      
+      const filePath = path.join(process.cwd(), 'project-documentation.pdf');
+      res.download(filePath, 'project-documentation.pdf', (err) => {
+        if (err) {
+          console.error('Error sending documentation:', err);
+          return res.status(500).json({ message: 'Error sending documentation' });
+        }
+        // Clean up the file after sending
+        fs.unlink(filePath, (unlinkErr) => {
+          if (unlinkErr) {
+            console.error('Error cleaning up documentation file:', unlinkErr);
+          }
+        });
+      });
+    } catch (error) {
+      console.error('Error generating documentation:', error);
+      res.status(500).json({ message: 'Failed to generate documentation' });
+    }
+  });
+
   // Start the Go server component that will handle the actual proxy functionality
   try {
     await startGoServer();
