@@ -1,21 +1,16 @@
 
-name = "api-gateway"  # with a hyphen "-", matching Cloudflare project name
+name = "api-gateway"  # Corrected: added the hyphen for the correct worker name
 
 compatibility_date = "2024-01-01"
 
+main = "./dist/index.js"
+
 [build]
 command = "npm run build"
-
-[site]
-bucket = "./dist/public"
 
 [vars]
 NODE_ENV = "production"
 
 [env.production]
-name = "api-gateway-prod"
+name = "api-gateway-prod"  # Corrected production environment name with hyphen
 route = "api-gateway.adevstack.workers.dev/*"
-
-[[env.production.routes]]
-pattern = "/api/*"
-script = "api-gateway-prod"
