@@ -10,6 +10,9 @@ command = "npm run build"
 [vars]
 NODE_ENV = "production"
 
+[secrets]
+CLOUDFLARE_API_TOKEN
+
 [env.production]
 vars = { NODE_ENV = "production" }
 route = "api-gateway.adevstack.workers.dev/*"
