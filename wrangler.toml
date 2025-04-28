@@ -1,10 +1,8 @@
+
 name = "api-gateway"
 compatibility_date = "2024-04-28"
 compatibility_flags = ["nodejs_compat"]
-node_compat = true
-
 main = "./dist/index.js"
-format = "esm"
 
 [build]
 command = "npm run build"
@@ -15,11 +13,3 @@ NODE_ENV = "production"
 [env.production]
 vars = { NODE_ENV = "production" }
 route = "api-gateway.adevstack.workers.dev/*"
-
-[build.upload]
-format = "modules"
-dir = "dist"
-main = "./index.js"
-
-[[build.polyfills]]
-packages = ["crypto-browserify", "stream-browserify", "buffer", "process"]
